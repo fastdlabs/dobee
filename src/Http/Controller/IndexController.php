@@ -10,9 +10,11 @@
 namespace Http\Controller;
 
 
+use FastD\Http\ServerRequest;
+
 class IndexController
 {
-    public function sayHello()
+    public function sayHello(ServerRequest $request)
     {
         return json([
             'foo' => 'bar'

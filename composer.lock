@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "43171cba79d38f3126a69946882c89e3",
-    "content-hash": "1f1ed21da1b816651576b81861d1c70e",
+    "hash": "873c87184de15aa1fae4c345f29a6aae",
+    "content-hash": "e7722f671bbf2e93dc2d9c755af33cc5",
     "packages": [
         {
             "name": "catfan/medoo",
@@ -107,16 +107,16 @@
         },
         {
             "name": "fastd/container",
-            "version": "v3.0.0",
+            "version": "v3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/container.git",
-                "reference": "03608cfc4f5faa0cc4ea4750b933718cbbbd4a46"
+                "reference": "8fe6eb8ff5c5d08679c6388b9cb604f1e0abc205"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/container/zipball/03608cfc4f5faa0cc4ea4750b933718cbbbd4a46",
-                "reference": "03608cfc4f5faa0cc4ea4750b933718cbbbd4a46",
+                "url": "https://api.github.com/repos/JanHuang/container/zipball/8fe6eb8ff5c5d08679c6388b9cb604f1e0abc205",
+                "reference": "8fe6eb8ff5c5d08679c6388b9cb604f1e0abc205",
                 "shasum": ""
             },
             "require": {
@@ -146,20 +146,20 @@
                 "FastD",
                 "container"
             ],
-            "time": "2017-01-11 09:11:12"
+            "time": "2017-02-01 09:45:24"
         },
         {
             "name": "fastd/fastd",
-            "version": "v3.0.0-rc3",
+            "version": "3.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/fastD.git",
-                "reference": "a49f3f6c0f036af70a8688f6835de08256e65fc7"
+                "reference": "29e763bffcdb7e098803b0d52eb15045fd4f0b77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/fastD/zipball/a49f3f6c0f036af70a8688f6835de08256e65fc7",
-                "reference": "a49f3f6c0f036af70a8688f6835de08256e65fc7",
+                "url": "https://api.github.com/repos/JanHuang/fastD/zipball/29e763bffcdb7e098803b0d52eb15045fd4f0b77",
+                "reference": "29e763bffcdb7e098803b0d52eb15045fd4f0b77",
                 "shasum": ""
             },
             "require": {
@@ -206,7 +206,7 @@
             "keywords": [
                 "FastD"
             ],
-            "time": "2017-02-01 02:44:28"
+            "time": "2017-02-01 10:43:00"
         },
         {
             "name": "fastd/http",
@@ -1024,7 +1024,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "fastd/fastd": 5,
+        "fastd/fastd": 20,
         "fastd/swoole": 10
     },
     "prefer-stable": false,
