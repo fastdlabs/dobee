@@ -9,7 +9,7 @@
     ],
     "require": {
         "php": ">=5.6",
-        "fastd/fastd": "3.0.x-dev",
+        "fastd/fastd": "~3.0.0@rc",
         "fastd/swoole": "~1.0.0@beta"
     },
     "config": {
