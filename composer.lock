@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "873c87184de15aa1fae4c345f29a6aae",
+    "hash": "5b8a669cd569fab9c21c65b6bf6d56dc",
     "content-hash": "e7722f671bbf2e93dc2d9c755af33cc5",
     "packages": [
         {
@@ -154,12 +154,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/fastD.git",
-                "reference": "29e763bffcdb7e098803b0d52eb15045fd4f0b77"
+                "reference": "608be58e9a5015e3af4525fb22201a9d3337828c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/fastD/zipball/29e763bffcdb7e098803b0d52eb15045fd4f0b77",
-                "reference": "29e763bffcdb7e098803b0d52eb15045fd4f0b77",
+                "url": "https://api.github.com/repos/JanHuang/fastD/zipball/608be58e9a5015e3af4525fb22201a9d3337828c",
+                "reference": "608be58e9a5015e3af4525fb22201a9d3337828c",
                 "shasum": ""
             },
             "require": {
@@ -206,7 +206,7 @@
             "keywords": [
                 "FastD"
             ],
-            "time": "2017-02-01 10:43:00"
+            "time": "2017-02-02 04:04:54"
         },
         {
             "name": "fastd/http",
@@ -328,16 +328,16 @@
         },
         {
             "name": "fastd/routing",
-            "version": "v3.0.1",
+            "version": "v3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/routing.git",
-                "reference": "a340f44272d2eabf93d46e772f7acda47c77fd1d"
+                "reference": "3729dc5f2646ad197161ee3a85a7859e3e0ecf76"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/routing/zipball/a340f44272d2eabf93d46e772f7acda47c77fd1d",
-                "reference": "a340f44272d2eabf93d46e772f7acda47c77fd1d",
+                "url": "https://api.github.com/repos/JanHuang/routing/zipball/3729dc5f2646ad197161ee3a85a7859e3e0ecf76",
+                "reference": "3729dc5f2646ad197161ee3a85a7859e3e0ecf76",
                 "shasum": ""
             },
             "require": {
@@ -368,20 +368,20 @@
             "keywords": [
                 "routing"
             ],
-            "time": "2017-01-29 02:20:29"
+            "time": "2017-02-01 15:16:47"
         },
         {
             "name": "fastd/swoole",
-            "version": "v1.0.0-beta2",
+            "version": "v1.0.0-beta3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/swoole.git",
-                "reference": "c96fab9d7e19ddf6ac05d1ada7d6a71ad5eb509d"
+                "reference": "541428be42b590facc541baf45970541d9d0f658"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/swoole/zipball/c96fab9d7e19ddf6ac05d1ada7d6a71ad5eb509d",
-                "reference": "c96fab9d7e19ddf6ac05d1ada7d6a71ad5eb509d",
+                "url": "https://api.github.com/repos/JanHuang/swoole/zipball/541428be42b590facc541baf45970541d9d0f658",
+                "reference": "541428be42b590facc541baf45970541d9d0f658",
                 "shasum": ""
             },
             "require": {
@@ -389,7 +389,7 @@
                 "fastd/http": "~3.0.0",
                 "fastd/packet": "~1.3.0",
                 "php": ">=5.6",
-                "symfony/console": "^3.0"
+                "symfony/console": "~3.2.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^5.0"
@@ -414,7 +414,7 @@
                 }
             ],
             "description": "FastD swoole.",
-            "time": "2017-01-17 08:15:21"
+            "time": "2017-02-02 03:23:55"
         },
         {
             "name": "fastd/testing",
