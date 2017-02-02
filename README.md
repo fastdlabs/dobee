@@ -1,6 +1,8 @@
-# api
+# DoBee
 
-[Documentation](https://github.com/JanHuang/fastD/blob/master/docs/zh_CN/1-1-about-fastd.md)
+### Documentation
+
+* [简体中文文档](https://github.com/JanHuang/fastD/blob/master/docs/zh_CN/1-1-about-fastd.md)
 
 ### Support
 
