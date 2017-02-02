@@ -154,12 +154,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/fastD.git",
-                "reference": "608be58e9a5015e3af4525fb22201a9d3337828c"
+                "reference": "cfdac02f0a3ac985f863a3a3989c8246c67d7fc9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/fastD/zipball/608be58e9a5015e3af4525fb22201a9d3337828c",
-                "reference": "608be58e9a5015e3af4525fb22201a9d3337828c",
+                "url": "https://api.github.com/repos/JanHuang/fastD/zipball/cfdac02f0a3ac985f863a3a3989c8246c67d7fc9",
+                "reference": "cfdac02f0a3ac985f863a3a3989c8246c67d7fc9",
                 "shasum": ""
             },
             "require": {
@@ -206,20 +206,20 @@
             "keywords": [
                 "FastD"
             ],
-            "time": "2017-02-02 04:04:54"
+            "time": "2017-02-02 09:31:30"
         },
         {
             "name": "fastd/http",
-            "version": "v3.0.1",
+            "version": "v3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/http.git",
-                "reference": "657c07509fc905f9ede4f7154abc1bddd61f08dd"
+                "reference": "aa6e94eb8d5f6629de30343a04b367cacb3f3f6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/http/zipball/657c07509fc905f9ede4f7154abc1bddd61f08dd",
-                "reference": "657c07509fc905f9ede4f7154abc1bddd61f08dd",
+                "url": "https://api.github.com/repos/JanHuang/http/zipball/aa6e94eb8d5f6629de30343a04b367cacb3f3f6d",
+                "reference": "aa6e94eb8d5f6629de30343a04b367cacb3f3f6d",
                 "shasum": ""
             },
             "require": {
@@ -250,7 +250,7 @@
                 "FastD",
                 "http"
             ],
-            "time": "2017-01-18 04:09:37"
+            "time": "2017-02-01 06:38:39"
         },
         {
             "name": "fastd/middleware",
