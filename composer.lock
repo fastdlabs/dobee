@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5b8a669cd569fab9c21c65b6bf6d56dc",
-    "content-hash": "e7722f671bbf2e93dc2d9c755af33cc5",
+    "hash": "b5c6c43abd1cdb4eb18f86e0b388ef0e",
+    "content-hash": "1f1ed21da1b816651576b81861d1c70e",
     "packages": [
         {
             "name": "catfan/medoo",
@@ -150,7 +150,7 @@
         },
         {
             "name": "fastd/fastd",
-            "version": "3.0.x-dev",
+            "version": "v3.0.0-rc6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/fastD.git",
@@ -1024,7 +1024,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "fastd/fastd": 20,
+        "fastd/fastd": 5,
         "fastd/swoole": 10
     },
     "prefer-stable": false,
