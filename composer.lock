@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b5c6c43abd1cdb4eb18f86e0b388ef0e",
-    "content-hash": "1f1ed21da1b816651576b81861d1c70e",
+    "hash": "d9e6869c3a2a87b1db9458889c836999",
+    "content-hash": "bc5c294aa8f92c17e0c5f387fe42457e",
     "packages": [
         {
             "name": "catfan/medoo",
@@ -150,16 +150,16 @@
         },
         {
             "name": "fastd/fastd",
-            "version": "v3.0.0-rc6",
+            "version": "v3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/fastD.git",
-                "reference": "cfdac02f0a3ac985f863a3a3989c8246c67d7fc9"
+                "reference": "9ead2d80ef2eca0a3cc3a179f8d76b89f1061567"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/fastD/zipball/cfdac02f0a3ac985f863a3a3989c8246c67d7fc9",
-                "reference": "cfdac02f0a3ac985f863a3a3989c8246c67d7fc9",
+                "url": "https://api.github.com/repos/JanHuang/fastD/zipball/9ead2d80ef2eca0a3cc3a179f8d76b89f1061567",
+                "reference": "9ead2d80ef2eca0a3cc3a179f8d76b89f1061567",
                 "shasum": ""
             },
             "require": {
@@ -169,7 +169,7 @@
                 "fastd/http": "~3.0.0",
                 "fastd/middleware": "~1.0.0",
                 "fastd/routing": "~3.0.0",
-                "fastd/swoole": "~1.0.0@beta",
+                "fastd/swoole": "~1.0.0",
                 "fastd/testing": "~0.1.0",
                 "monolog/monolog": "~1.0",
                 "php": ">=5.6",
@@ -206,7 +206,7 @@
             "keywords": [
                 "FastD"
             ],
-            "time": "2017-02-02 09:31:30"
+            "time": "2017-02-02 13:46:56"
         },
         {
             "name": "fastd/http",
@@ -372,7 +372,7 @@
         },
         {
             "name": "fastd/swoole",
-            "version": "v1.0.0-beta3",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/swoole.git",
@@ -1023,10 +1023,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "fastd/fastd": 5,
-        "fastd/swoole": 10
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
