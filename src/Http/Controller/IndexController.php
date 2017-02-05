@@ -17,7 +17,8 @@ class IndexController
     public function sayHello(ServerRequest $request)
     {
         return json([
-            'foo' => 'bar'
+            'name' => $request->getAttribute('name'),
+            'query' => $request->getQueryParams()
         ]);
     }
 }
