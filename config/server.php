@@ -8,8 +8,21 @@
  */
 
 return [
-    'listen' => 'http://127.0.0.1:9527',
+    'listen' => 'http://0.0.0.0:9527',
     'options' => [
+        'pid_file' => '',
         'worker_num' => 10
-    ]
+    ],
+    'processes' => [
+        \Processor\DemoProcessor::class
+    ],
+    'ports' => [
+        [
+            'class' => \Port\DemoPort::class,
+            'listen' => 'tcp://127.0.0.1:9528',
+            'options' => [
+
+            ],
+        ],
+    ],
 ];

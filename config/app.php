@@ -16,7 +16,7 @@ return [
     /**
      * Application environment local/dev/prod
      */
-    'environment' => 'local',
+    'environment' => 'prod',
 
     /**
      * Application timezone
@@ -37,13 +37,42 @@ return [
      */
     'services' => [
         \FastD\ServiceProvider\DatabaseServiceProvider::class,
-        \FastD\ServiceProvider\CacheServiceProvider::class
+        \FastD\ServiceProvider\CacheServiceProvider::class,
     ],
 
     /**
      * Http middleware
      */
     'middleware' => [
-        'auth' => \FastD\Auth\BasicAuth::class
-    ]
+        'basic.auth' => new FastD\BasicAuthenticate\HttpBasicAuthentication([
+            'authenticator' => [
+                'class' => \FastD\BasicAuthenticate\PhpAuthenticator::class,
+                'params' => [
+                    'foo' => 'bar'
+                ]
+            ],
+            'response' => [
+                'class' => \FastD\Http\JsonResponse::class,
+                'data' => [
+                    'msg' => 'not allow access',
+                    'code' => 401
+                ]
+            ]
+        ])
+    ],
+
+    /**
+     * User custom configure
+     */
+    'config' => include __DIR__ . '/config.php',
+
+    /**
+     * Database config
+     */
+    'database' => include __DIR__ . '/database.php',
+
+    /**
+     * Caching config
+     */
+    'cache' => include __DIR__ . '/cache.php',
 ];
