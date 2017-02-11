@@ -188,16 +188,16 @@
         },
         {
             "name": "fastd/fastd",
-            "version": "v3.0.3",
+            "version": "v3.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/fastD.git",
-                "reference": "7cd053c8c23ff86483043c28720353f333075d95"
+                "reference": "31f4653faddccd5911c9b34a284ece2cb253fca8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/fastD/zipball/7cd053c8c23ff86483043c28720353f333075d95",
-                "reference": "7cd053c8c23ff86483043c28720353f333075d95",
+                "url": "https://api.github.com/repos/JanHuang/fastD/zipball/31f4653faddccd5911c9b34a284ece2cb253fca8",
+                "reference": "31f4653faddccd5911c9b34a284ece2cb253fca8",
                 "shasum": ""
             },
             "require": {
@@ -245,7 +245,7 @@
             "keywords": [
                 "FastD"
             ],
-            "time": "2017-02-10 08:32:34"
+            "time": "2017-02-10 09:00:00"
         },
         {
             "name": "fastd/http",
@@ -1610,16 +1610,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "5.7.12",
+            "version": "5.7.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "944600e244f80a5252679878553b95c63dbf978b"
+                "reference": "60ebeed87a35ea46fd7f7d8029df2d6f013ebb34"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/944600e244f80a5252679878553b95c63dbf978b",
-                "reference": "944600e244f80a5252679878553b95c63dbf978b",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/60ebeed87a35ea46fd7f7d8029df2d6f013ebb34",
+                "reference": "60ebeed87a35ea46fd7f7d8029df2d6f013ebb34",
                 "shasum": ""
             },
             "require": {
@@ -1688,7 +1688,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2017-02-08 05:54:05"
+            "time": "2017-02-10 09:05:10"
         },
         {
             "name": "phpunit/phpunit-mock-objects",

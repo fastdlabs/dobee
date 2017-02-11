@@ -8,17 +8,17 @@
  */
 
 return [
-    'listen' => 'http://0.0.0.0:9527',
+    'listen' => 'http://127.0.0.1:9527',
     'options' => [
         'pid_file' => '',
         'worker_num' => 10
     ],
     'processes' => [
-        \Processor\DemoProcessor::class
+        \Processor\ServerProcessor::class
     ],
     'ports' => [
         [
-            'class' => \Port\DemoPort::class,
+            'class' => \Port\MultiPort::class,
             'listen' => 'tcp://127.0.0.1:9528',
             'options' => [
 
