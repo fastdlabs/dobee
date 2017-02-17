@@ -8,13 +8,16 @@
  */
 
 return [
-    'listen' => 'http://127.0.0.1:9527',
+    'listen' => 'http://127.0.0.1:9533',
     'options' => [
         'pid_file' => '',
         'worker_num' => 10
     ],
+    'discovery' => [
+        'tcp://127.0.0.1:9888'
+    ],
     'processes' => [
-        \Processor\ServerProcessor::class
+        \Processor\ServerProcessor::class,
     ],
     'ports' => [
         [

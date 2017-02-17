@@ -11,7 +11,7 @@ return [
     /**
      * The application name.
      */
-    'name' => 'fast-d',
+    'name' => 'fast-d2',
 
     /**
      * Application environment local/dev/prod
