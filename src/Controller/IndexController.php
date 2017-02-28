@@ -17,6 +17,13 @@ class IndexController
     public function sayHello(ServerRequest $request)
     {
         return json([
+            'msg' => 'hello dobee',
+        ]);
+    }
+
+    public function dynamic(ServerRequest $request)
+    {
+        return json([
             'name' => $request->getAttribute('name'),
             'query' => $request->getQueryParams()
         ]);

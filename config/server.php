@@ -8,24 +8,17 @@
  */
 
 return [
-    'listen' => 'http://127.0.0.1:9533',
+    'listen' => 'http://0.0.0.0:9527',
+    'class' => \FastD\Servitization\Server\HTTPServer::class,
     'options' => [
         'pid_file' => '',
-        'worker_num' => 10
-    ],
-    'discovery' => [
-        'tcp://127.0.0.1:9888'
+        'worker_num' => 10,
+        'task_worker_num' => 20,
     ],
     'processes' => [
-        \Processor\ServerProcessor::class,
-    ],
-    'ports' => [
         [
-            'class' => \Port\MultiPort::class,
-            'listen' => 'tcp://127.0.0.1:9528',
-            'options' => [
-
-            ],
+            'class' => \FastD\Servitization\Discovery\Discover::class,
+            'uri' => 'tcp://127.0.0.1:9888',
         ],
     ],
 ];

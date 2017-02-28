@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a2c68949a0e74d6985013c559259db2c",
-    "content-hash": "55de6f95292da3cd1caae96e2a8b9fc9",
+    "hash": "b500393741c63378950b252346ceb3a0",
+    "content-hash": "8a5a56a1da81f1a4aca94169518929ce",
     "packages": [
         {
             "name": "catfan/medoo",
@@ -224,21 +224,22 @@
         },
         {
             "name": "fastd/config",
-            "version": "v3.0.1",
+            "version": "3.1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/config.git",
-                "reference": "b2afac68c44812f9a167bb7c8e031b70b0ec4c31"
+                "reference": "97ccb2d16fee435f4d0c99a462cea99a8681e29d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/config/zipball/b2afac68c44812f9a167bb7c8e031b70b0ec4c31",
-                "reference": "b2afac68c44812f9a167bb7c8e031b70b0ec4c31",
+                "url": "https://api.github.com/repos/JanHuang/config/zipball/97ccb2d16fee435f4d0c99a462cea99a8681e29d",
+                "reference": "97ccb2d16fee435f4d0c99a462cea99a8681e29d",
                 "shasum": ""
             },
             "require": {
+                "fastd/utils": "0.1.x-dev",
                 "php": ">=5.6",
-                "symfony/yaml": "~3.1.0"
+                "symfony/yaml": "^3.2"
             },
             "require-dev": {
                 "phpunit/phpunit": "^5.0"
@@ -247,7 +248,10 @@
             "autoload": {
                 "psr-4": {
                     "FastD\\Config\\": "src"
-                }
+                },
+                "files": [
+                    "helpers.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -259,11 +263,12 @@
                     "email": "bboyjanhuang@gmail.com"
                 }
             ],
-            "description": "FastD config container",
+            "description": "config container",
             "keywords": [
+                "FastD",
                 "config"
             ],
-            "time": "2017-02-10 08:26:35"
+            "time": "2017-02-27 12:48:35"
         },
         {
             "name": "fastd/container",
@@ -314,25 +319,24 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/fastD.git",
-                "reference": "076f0505bc4ded19d7a279b9dddc18942861517f"
+                "reference": "9a551f5f2f386d9681f34825bddb8edcde44397f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/fastD/zipball/076f0505bc4ded19d7a279b9dddc18942861517f",
-                "reference": "076f0505bc4ded19d7a279b9dddc18942861517f",
+                "url": "https://api.github.com/repos/JanHuang/fastD/zipball/9a551f5f2f386d9681f34825bddb8edcde44397f",
+                "reference": "9a551f5f2f386d9681f34825bddb8edcde44397f",
                 "shasum": ""
             },
             "require": {
                 "catfan/medoo": "~1.1.0",
                 "fastd/basic-authenticate": "~0.1.0",
-                "fastd/config": "~3.0.0",
+                "fastd/config": "3.1.x-dev",
                 "fastd/container": "~3.0.0",
                 "fastd/http": "~3.0.0",
                 "fastd/middleware": "~1.0.0",
                 "fastd/routing": "~3.0.0",
-                "fastd/swoole": "~1.0.0",
-                "fzaninotto/faker": "~1.6.0",
-                "jolicode/jolinotif": "^1.0",
+                "fastd/swoole": "2.0.x-dev",
+                "fastd/utils": "0.1.x-dev",
                 "monolog/monolog": "~1.0",
                 "php": ">=5.6",
                 "symfony/cache": "~3.2",
@@ -340,6 +344,7 @@
                 "zircote/swagger-php": "^2.0"
             },
             "require-dev": {
+                "fzaninotto/faker": "~1.6.0",
                 "phpunit/phpunit": "^5.0",
                 "squizlabs/php_codesniffer": "^2.8"
             },
@@ -370,7 +375,7 @@
             "keywords": [
                 "FastD"
             ],
-            "time": "2017-02-27 06:27:02"
+            "time": "2017-02-28 07:04:12"
         },
         {
             "name": "fastd/http",
@@ -536,16 +541,16 @@
         },
         {
             "name": "fastd/swoole",
-            "version": "v1.0.5",
+            "version": "2.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/swoole.git",
-                "reference": "fb04d66d72e8548ae0113cf897c8e645acbd29c2"
+                "reference": "643a638108f3074b8e4193080488a3fe7a3753c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/swoole/zipball/fb04d66d72e8548ae0113cf897c8e645acbd29c2",
-                "reference": "fb04d66d72e8548ae0113cf897c8e645acbd29c2",
+                "url": "https://api.github.com/repos/JanHuang/swoole/zipball/643a638108f3074b8e4193080488a3fe7a3753c1",
+                "reference": "643a638108f3074b8e4193080488a3fe7a3753c1",
                 "shasum": ""
             },
             "require": {
@@ -553,6 +558,9 @@
                 "fastd/packet": "~1.4.0",
                 "php": ">=5.6",
                 "symfony/console": "^3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.0"
             },
             "type": "library",
             "autoload": {
@@ -574,108 +582,45 @@
                 }
             ],
             "description": "FastD swoole.",
-            "time": "2017-02-24 01:48:11"
+            "time": "2017-02-28 06:22:20"
         },
         {
-            "name": "fzaninotto/faker",
-            "version": "v1.6.0",
+            "name": "fastd/utils",
+            "version": "0.1.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "44f9a286a04b80c76a4e5fb7aad8bb539b920123"
+                "url": "https://github.com/JanHuang/utils.git",
+                "reference": "0ec85763dfe3ae4b05749c020dddc4fdab16869f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/44f9a286a04b80c76a4e5fb7aad8bb539b920123",
-                "reference": "44f9a286a04b80c76a4e5fb7aad8bb539b920123",
+                "url": "https://api.github.com/repos/JanHuang/utils/zipball/0ec85763dfe3ae4b05749c020dddc4fdab16869f",
+                "reference": "0ec85763dfe3ae4b05749c020dddc4fdab16869f",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.3.3|^7.0"
+                "php": ">=5.6"
             },
             "require-dev": {
-                "ext-intl": "*",
-                "phpunit/phpunit": "~4.0",
-                "squizlabs/php_codesniffer": "~1.5"
+                "phpunit/phpunit": "^5.0"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": []
-            },
             "autoload": {
                 "psr-4": {
-                    "Faker\\": "src/Faker/"
-                }
+                    "FastD\\Utils\\": "src"
+                },
+                "files": [
+                    "helpers.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
             "authors": [
                 {
-                    "name": "François Zaninotto"
+                    "name": "JanHuang",
+                    "email": "bboyjanhuang@gmail.com"
                 }
             ],
-            "description": "Faker is a PHP library that generates fake data for you.",
-            "keywords": [
-                "data",
-                "faker",
-                "fixtures"
-            ],
-            "time": "2016-04-29 12:21:54"
-        },
-        {
-            "name": "jolicode/jolinotif",
-            "version": "v1.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/jolicode/JoliNotif.git",
-                "reference": "8b0af95c95711cfb77d0af579c8dbe1c62f40a14"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/jolicode/JoliNotif/zipball/8b0af95c95711cfb77d0af579c8dbe1c62f40a14",
-                "reference": "8b0af95c95711cfb77d0af579c8dbe1c62f40a14",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0",
-                "symfony/process": "~2.3|~3.0"
-            },
-            "require-dev": {
-                "fabpot/php-cs-fixer": "~1.5",
-                "phpunit/phpunit": "~4.5"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Joli\\JoliNotif\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Loïck Piera",
-                    "email": "pyrech@gmail.com"
-                }
-            ],
-            "description": "Send desktop notifications on Windows, Linux, MacOS.",
-            "keywords": [
-                "MAC",
-                "growl",
-                "linux",
-                "notification",
-                "windows"
-            ],
-            "time": "2016-03-22 20:13:26"
+            "time": "2017-02-28 06:09:52"
         },
         {
             "name": "monolog/monolog",
@@ -1194,75 +1139,32 @@
             "time": "2016-11-14 01:06:16"
         },
         {
-            "name": "symfony/process",
+            "name": "symfony/yaml",
             "version": "v3.2.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/process.git",
-                "reference": "0ab87c1e7570b3534a6e51eb4ca8e9f6d7327856"
+                "url": "https://github.com/symfony/yaml.git",
+                "reference": "9724c684646fcb5387d579b4bfaa63ee0b0c64c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/0ab87c1e7570b3534a6e51eb4ca8e9f6d7327856",
-                "reference": "0ab87c1e7570b3534a6e51eb4ca8e9f6d7327856",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/9724c684646fcb5387d579b4bfaa63ee0b0c64c8",
+                "reference": "9724c684646fcb5387d579b4bfaa63ee0b0c64c8",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "symfony/console": "~2.8|~3.0"
+            },
+            "suggest": {
+                "symfony/console": "For validating YAML files using the lint command"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
                     "dev-master": "3.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Process\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Process Component",
-            "homepage": "https://symfony.com",
-            "time": "2017-02-16 14:07:22"
-        },
-        {
-            "name": "symfony/yaml",
-            "version": "v3.1.10",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/yaml.git",
-                "reference": "752bc2a0dff0168742c92ec87261f7e09b7935fb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/752bc2a0dff0168742c92ec87261f7e09b7935fb",
-                "reference": "752bc2a0dff0168742c92ec87261f7e09b7935fb",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5.9"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.1-dev"
                 }
             },
             "autoload": {
@@ -1289,7 +1191,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2017-01-21 17:01:39"
+            "time": "2017-02-16 22:46:52"
         },
         {
             "name": "zircote/swagger-php",
@@ -1862,16 +1764,16 @@
         },
         {
             "name": "phpunit/php-token-stream",
-            "version": "1.4.10",
+            "version": "1.4.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-                "reference": "284fb0679dd25fb5ffb56dad92c72860c0a22f1b"
+                "reference": "e03f8f67534427a787e21a385a67ec3ca6978ea7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/284fb0679dd25fb5ffb56dad92c72860c0a22f1b",
-                "reference": "284fb0679dd25fb5ffb56dad92c72860c0a22f1b",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/e03f8f67534427a787e21a385a67ec3ca6978ea7",
+                "reference": "e03f8f67534427a787e21a385a67ec3ca6978ea7",
                 "shasum": ""
             },
             "require": {
@@ -1907,7 +1809,7 @@
             "keywords": [
                 "tokenizer"
             ],
-            "time": "2017-02-23 06:14:45"
+            "time": "2017-02-27 10:12:30"
         },
         {
             "name": "phpunit/phpunit",
@@ -2617,7 +2519,10 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "fastd/fastd": 20
+        "fastd/fastd": 20,
+        "fastd/config": 20,
+        "fastd/swoole": 20,
+        "fastd/utils": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
