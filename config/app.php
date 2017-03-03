@@ -41,6 +41,13 @@ return [
     ],
 
     /**
+     *
+     */
+    'consoles' => [
+        \Console\DemoConsole::class,
+    ],
+
+    /**
      * Http middleware
      */
     'middleware' => [
