@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "595d47b1bc1ce889bbbb71cb7b6f4e8c",
-    "content-hash": "afe24abcdc4a95bcdbebbaa9ef788451",
+    "hash": "9d7b95cc018d7fd866115bb6804aa992",
+    "content-hash": "f8a8048b7c40d69cdb44434b35e93b52",
     "packages": [
         {
             "name": "catfan/medoo",
@@ -197,12 +197,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/fastD.git",
-                "reference": "acfef7e9c8a643215785b798be8183c656a9771f"
+                "reference": "0f3d678bb2ce231f0b99a075b7ba75c02b3b18a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/fastD/zipball/acfef7e9c8a643215785b798be8183c656a9771f",
-                "reference": "acfef7e9c8a643215785b798be8183c656a9771f",
+                "url": "https://api.github.com/repos/JanHuang/fastD/zipball/0f3d678bb2ce231f0b99a075b7ba75c02b3b18a0",
+                "reference": "0f3d678bb2ce231f0b99a075b7ba75c02b3b18a0",
                 "shasum": ""
             },
             "require": {
@@ -210,11 +210,11 @@
                 "fastd/basic-authenticate": "~0.1.0",
                 "fastd/config": "3.1.x-dev",
                 "fastd/container": "~3.0.0",
-                "fastd/http": "3.0.x-dev",
+                "fastd/http": "^3.0",
                 "fastd/middleware": "~1.0.0",
-                "fastd/routing": "3.1.x-dev",
+                "fastd/routing": "^3.0",
                 "fastd/swoole": "2.0.x-dev",
-                "fastd/testing": "0.2.x-dev",
+                "fastd/testing": "~0.2.0",
                 "fastd/utils": "0.1.x-dev",
                 "monolog/monolog": "~1.0",
                 "php": ">=5.6",
@@ -251,11 +251,11 @@
             "keywords": [
                 "FastD"
             ],
-            "time": "2017-03-10 09:17:47"
+            "time": "2017-03-10 11:13:29"
         },
         {
             "name": "fastd/http",
-            "version": "3.0.x-dev",
+            "version": "v3.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/http.git",
@@ -373,7 +373,7 @@
         },
         {
             "name": "fastd/routing",
-            "version": "3.1.x-dev",
+            "version": "v3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/routing.git",
@@ -421,17 +421,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/swoole.git",
-                "reference": "e8db097d16729cb4d5f517db84f1cd91483df734"
+                "reference": "be8aeff3e6663107f6ef00063a73085cec5c0820"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/swoole/zipball/e8db097d16729cb4d5f517db84f1cd91483df734",
-                "reference": "e8db097d16729cb4d5f517db84f1cd91483df734",
+                "url": "https://api.github.com/repos/JanHuang/swoole/zipball/be8aeff3e6663107f6ef00063a73085cec5c0820",
+                "reference": "be8aeff3e6663107f6ef00063a73085cec5c0820",
                 "shasum": ""
             },
             "require": {
-                "fastd/http": "3.0.x-dev",
-                "fastd/packet": "~1.4.0",
+                "fastd/http": "^3.0.0",
+                "fastd/packet": "^1.4.0",
                 "php": ">=5.6",
                 "symfony/console": "^3.2"
             },
@@ -458,25 +458,24 @@
                 }
             ],
             "description": "FastD swoole.",
-            "time": "2017-03-10 08:57:42"
+            "time": "2017-03-10 11:02:35"
         },
         {
             "name": "fastd/testing",
-            "version": "0.2.x-dev",
+            "version": "v0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/testing.git",
-                "reference": "d38b9e400d325c135a252b2ca1c0ef6d48392c2f"
+                "reference": "fafc1b7e87b7b01a3d99468c91543ba5076bfd8f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/testing/zipball/d38b9e400d325c135a252b2ca1c0ef6d48392c2f",
-                "reference": "d38b9e400d325c135a252b2ca1c0ef6d48392c2f",
+                "url": "https://api.github.com/repos/JanHuang/testing/zipball/fafc1b7e87b7b01a3d99468c91543ba5076bfd8f",
+                "reference": "fafc1b7e87b7b01a3d99468c91543ba5076bfd8f",
                 "shasum": ""
             },
             "require": {
-                "fastd/http": "~3.0.0",
-                "fzaninotto/faker": "~1.6.0"
+                "fastd/http": "~3.0.0"
             },
             "require-dev": {
                 "phpunit/dbunit": "^2.0"
@@ -490,11 +489,11 @@
             "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
-                    "name": "JanHuang",
+                    "name": "janhuang",
                     "email": "bboyjanhuang@gmail.com"
                 }
             ],
-            "time": "2017-03-01 10:52:19"
+            "time": "2017-03-10 10:59:28"
         },
         {
             "name": "fastd/utils",
@@ -502,12 +501,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/utils.git",
-                "reference": "0ec85763dfe3ae4b05749c020dddc4fdab16869f"
+                "reference": "11a5fcd21ed60a5d26c1aeb062ecf5c06e329fcf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/utils/zipball/0ec85763dfe3ae4b05749c020dddc4fdab16869f",
-                "reference": "0ec85763dfe3ae4b05749c020dddc4fdab16869f",
+                "url": "https://api.github.com/repos/JanHuang/utils/zipball/11a5fcd21ed60a5d26c1aeb062ecf5c06e329fcf",
+                "reference": "11a5fcd21ed60a5d26c1aeb062ecf5c06e329fcf",
                 "shasum": ""
             },
             "require": {
@@ -532,55 +531,7 @@
                     "email": "bboyjanhuang@gmail.com"
                 }
             ],
-            "time": "2017-02-28 06:09:52"
-        },
-        {
-            "name": "fzaninotto/faker",
-            "version": "v1.6.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "44f9a286a04b80c76a4e5fb7aad8bb539b920123"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/44f9a286a04b80c76a4e5fb7aad8bb539b920123",
-                "reference": "44f9a286a04b80c76a4e5fb7aad8bb539b920123",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.3.3|^7.0"
-            },
-            "require-dev": {
-                "ext-intl": "*",
-                "phpunit/phpunit": "~4.0",
-                "squizlabs/php_codesniffer": "~1.5"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": []
-            },
-            "autoload": {
-                "psr-4": {
-                    "Faker\\": "src/Faker/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "François Zaninotto"
-                }
-            ],
-            "description": "Faker is a PHP library that generates fake data for you.",
-            "keywords": [
-                "data",
-                "faker",
-                "fixtures"
-            ],
-            "time": "2016-04-29 12:21:54"
+            "time": "2017-03-10 11:10:11"
         },
         {
             "name": "monolog/monolog",
@@ -2541,11 +2492,8 @@
     "stability-flags": {
         "fastd/fastd": 20,
         "fastd/config": 20,
-        "fastd/routing": 20,
         "fastd/swoole": 20,
-        "fastd/utils": 20,
-        "fastd/testing": 20,
-        "fastd/http": 20
+        "fastd/utils": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
