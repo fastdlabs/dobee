@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d28917e96459d0e6d85bc79fe71f42a1",
-    "content-hash": "4e45c2fd89bad2c6c0e2e91956dbd8ea",
+    "hash": "595d47b1bc1ce889bbbb71cb7b6f4e8c",
+    "content-hash": "afe24abcdc4a95bcdbebbaa9ef788451",
     "packages": [
         {
             "name": "catfan/medoo",
@@ -197,12 +197,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/fastD.git",
-                "reference": "5d430b4265831b1933dccf3a177dbd4be41dcdea"
+                "reference": "acfef7e9c8a643215785b798be8183c656a9771f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/fastD/zipball/5d430b4265831b1933dccf3a177dbd4be41dcdea",
-                "reference": "5d430b4265831b1933dccf3a177dbd4be41dcdea",
+                "url": "https://api.github.com/repos/JanHuang/fastD/zipball/acfef7e9c8a643215785b798be8183c656a9771f",
+                "reference": "acfef7e9c8a643215785b798be8183c656a9771f",
                 "shasum": ""
             },
             "require": {
@@ -210,14 +210,15 @@
                 "fastd/basic-authenticate": "~0.1.0",
                 "fastd/config": "3.1.x-dev",
                 "fastd/container": "~3.0.0",
-                "fastd/http": "~3.0.0",
+                "fastd/http": "3.0.x-dev",
                 "fastd/middleware": "~1.0.0",
-                "fastd/routing": "~3.0.0",
+                "fastd/routing": "3.1.x-dev",
                 "fastd/swoole": "2.0.x-dev",
                 "fastd/testing": "0.2.x-dev",
                 "fastd/utils": "0.1.x-dev",
                 "monolog/monolog": "~1.0",
                 "php": ">=5.6",
+                "robmorgan/phinx": "^0.8.0",
                 "symfony/cache": "~3.2"
             },
             "require-dev": {
@@ -250,20 +251,20 @@
             "keywords": [
                 "FastD"
             ],
-            "time": "2017-03-03 09:31:10"
+            "time": "2017-03-10 09:17:47"
         },
         {
             "name": "fastd/http",
-            "version": "v3.0.6",
+            "version": "3.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/http.git",
-                "reference": "f3ae1abb5982321bd65e56ba0cc0de3aa878c63f"
+                "reference": "a1a3f0a6629f8972308bb27b2b00f44fdfe727cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/http/zipball/f3ae1abb5982321bd65e56ba0cc0de3aa878c63f",
-                "reference": "f3ae1abb5982321bd65e56ba0cc0de3aa878c63f",
+                "url": "https://api.github.com/repos/JanHuang/http/zipball/a1a3f0a6629f8972308bb27b2b00f44fdfe727cc",
+                "reference": "a1a3f0a6629f8972308bb27b2b00f44fdfe727cc",
                 "shasum": ""
             },
             "require": {
@@ -294,7 +295,7 @@
                 "FastD",
                 "http"
             ],
-            "time": "2017-02-10 13:34:04"
+            "time": "2017-03-08 06:21:22"
         },
         {
             "name": "fastd/middleware",
@@ -372,16 +373,16 @@
         },
         {
             "name": "fastd/routing",
-            "version": "v3.0.5",
+            "version": "3.1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/routing.git",
-                "reference": "b76ac6831250c45880929aef5857583ecbda6cda"
+                "reference": "21cd85c4c5ae585de26b3d6459d91634942bd6ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/routing/zipball/b76ac6831250c45880929aef5857583ecbda6cda",
-                "reference": "b76ac6831250c45880929aef5857583ecbda6cda",
+                "url": "https://api.github.com/repos/JanHuang/routing/zipball/21cd85c4c5ae585de26b3d6459d91634942bd6ce",
+                "reference": "21cd85c4c5ae585de26b3d6459d91634942bd6ce",
                 "shasum": ""
             },
             "require": {
@@ -412,7 +413,7 @@
             "keywords": [
                 "routing"
             ],
-            "time": "2017-02-17 03:30:39"
+            "time": "2017-03-10 07:46:11"
         },
         {
             "name": "fastd/swoole",
@@ -420,16 +421,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/swoole.git",
-                "reference": "14c11c5910d17cf5ce4920c367ad2863436b0951"
+                "reference": "e8db097d16729cb4d5f517db84f1cd91483df734"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/swoole/zipball/14c11c5910d17cf5ce4920c367ad2863436b0951",
-                "reference": "14c11c5910d17cf5ce4920c367ad2863436b0951",
+                "url": "https://api.github.com/repos/JanHuang/swoole/zipball/e8db097d16729cb4d5f517db84f1cd91483df734",
+                "reference": "e8db097d16729cb4d5f517db84f1cd91483df734",
                 "shasum": ""
             },
             "require": {
-                "fastd/http": "~3.0.0",
+                "fastd/http": "3.0.x-dev",
                 "fastd/packet": "~1.4.0",
                 "php": ">=5.6",
                 "symfony/console": "^3.2"
@@ -457,7 +458,7 @@
                 }
             ],
             "description": "FastD swoole.",
-            "time": "2017-02-28 14:46:44"
+            "time": "2017-03-10 08:57:42"
         },
         {
             "name": "fastd/testing",
@@ -803,17 +804,83 @@
             "time": "2016-10-10 12:19:37"
         },
         {
-            "name": "symfony/cache",
-            "version": "v3.2.4",
+            "name": "robmorgan/phinx",
+            "version": "v0.8.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/cache.git",
-                "reference": "167d11ab127c7a998b855b8d1bcb7bc6bf5d3afa"
+                "url": "https://github.com/robmorgan/phinx.git",
+                "reference": "15e43d10dd99ac818c8d65735c50191bcbeafdbc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/cache/zipball/167d11ab127c7a998b855b8d1bcb7bc6bf5d3afa",
-                "reference": "167d11ab127c7a998b855b8d1bcb7bc6bf5d3afa",
+                "url": "https://api.github.com/repos/robmorgan/phinx/zipball/15e43d10dd99ac818c8d65735c50191bcbeafdbc",
+                "reference": "15e43d10dd99ac818c8d65735c50191bcbeafdbc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4",
+                "symfony/config": "~2.8|~3.0",
+                "symfony/console": "~2.8|~3.0",
+                "symfony/yaml": "~2.8|~3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.26|^5.0"
+            },
+            "bin": [
+                "bin/phinx"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Phinx\\": "src/Phinx"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Woody Gilk",
+                    "email": "woody.gilk@gmail.com",
+                    "homepage": "http://shadowhand.me",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Rob Morgan",
+                    "email": "robbym@gmail.com",
+                    "homepage": "https://robmorgan.id.au",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Richard Quadling",
+                    "email": "rquadling@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Phinx makes it ridiculously easy to manage the database migrations for your PHP app.",
+            "homepage": "https://phinx.org",
+            "keywords": [
+                "database",
+                "database migrations",
+                "db",
+                "migrations",
+                "phinx"
+            ],
+            "time": "2017-02-28 18:34:31"
+        },
+        {
+            "name": "symfony/cache",
+            "version": "v3.2.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/cache.git",
+                "reference": "c28526c3b88661905d3cabb811b215bd7eed9ed1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/cache/zipball/c28526c3b88661905d3cabb811b215bd7eed9ed1",
+                "reference": "c28526c3b88661905d3cabb811b215bd7eed9ed1",
                 "shasum": ""
             },
             "require": {
@@ -867,20 +934,76 @@
                 "caching",
                 "psr6"
             ],
-            "time": "2017-02-04 08:30:23"
+            "time": "2017-03-07 15:57:48"
         },
         {
-            "name": "symfony/console",
-            "version": "v3.2.4",
+            "name": "symfony/config",
+            "version": "v3.2.5",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/console.git",
-                "reference": "0e5e6899f82230fcb1153bcaf0e106ffaa44b870"
+                "url": "https://github.com/symfony/config.git",
+                "reference": "741d6d4cd1414d67d48eb71aba6072b46ba740c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/0e5e6899f82230fcb1153bcaf0e106ffaa44b870",
-                "reference": "0e5e6899f82230fcb1153bcaf0e106ffaa44b870",
+                "url": "https://api.github.com/repos/symfony/config/zipball/741d6d4cd1414d67d48eb71aba6072b46ba740c2",
+                "reference": "741d6d4cd1414d67d48eb71aba6072b46ba740c2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9",
+                "symfony/filesystem": "~2.8|~3.0"
+            },
+            "require-dev": {
+                "symfony/yaml": "~3.0"
+            },
+            "suggest": {
+                "symfony/yaml": "To use the yaml reference dumper"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Config\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Config Component",
+            "homepage": "https://symfony.com",
+            "time": "2017-03-01 18:18:25"
+        },
+        {
+            "name": "symfony/console",
+            "version": "v3.2.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/console.git",
+                "reference": "28fb243a2b5727774ca309ec2d92da240f1af0dd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/console/zipball/28fb243a2b5727774ca309ec2d92da240f1af0dd",
+                "reference": "28fb243a2b5727774ca309ec2d92da240f1af0dd",
                 "shasum": ""
             },
             "require": {
@@ -930,20 +1053,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2017-02-16 14:07:22"
+            "time": "2017-03-06 19:30:27"
         },
         {
             "name": "symfony/debug",
-            "version": "v3.2.4",
+            "version": "v3.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "9b98854cb45bc59d100b7d4cc4cf9e05f21026b9"
+                "reference": "b90c9f91ad8ac37d9f114e369042d3226b34dc1a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/9b98854cb45bc59d100b7d4cc4cf9e05f21026b9",
-                "reference": "9b98854cb45bc59d100b7d4cc4cf9e05f21026b9",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/b90c9f91ad8ac37d9f114e369042d3226b34dc1a",
+                "reference": "b90c9f91ad8ac37d9f114e369042d3226b34dc1a",
                 "shasum": ""
             },
             "require": {
@@ -987,7 +1110,56 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2017-02-16 16:34:18"
+            "time": "2017-02-18 17:28:00"
+        },
+        {
+            "name": "symfony/filesystem",
+            "version": "v3.2.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/filesystem.git",
+                "reference": "bc0f17bed914df2cceb989972c3b996043c4da4a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/bc0f17bed914df2cceb989972c3b996043c4da4a",
+                "reference": "bc0f17bed914df2cceb989972c3b996043c4da4a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Filesystem\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Filesystem Component",
+            "homepage": "https://symfony.com",
+            "time": "2017-03-06 19:30:27"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -1050,16 +1222,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.2.4",
+            "version": "v3.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "9724c684646fcb5387d579b4bfaa63ee0b0c64c8"
+                "reference": "093e416ad096355149e265ea2e4cc1f9ee40ab1a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/9724c684646fcb5387d579b4bfaa63ee0b0c64c8",
-                "reference": "9724c684646fcb5387d579b4bfaa63ee0b0c64c8",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/093e416ad096355149e265ea2e4cc1f9ee40ab1a",
+                "reference": "093e416ad096355149e265ea2e4cc1f9ee40ab1a",
                 "shasum": ""
             },
             "require": {
@@ -1101,7 +1273,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2017-02-16 22:46:52"
+            "time": "2017-03-07 16:47:02"
         }
     ],
     "packages-dev": [
@@ -1802,23 +1974,23 @@
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/code-unit-reverse-lookup.git",
-                "reference": "c36f5e7cfce482fde5bf8d10d41a53591e0198fe"
+                "reference": "4419fcdb5eabb9caa61a27c7a1db532a6b55dd18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/code-unit-reverse-lookup/zipball/c36f5e7cfce482fde5bf8d10d41a53591e0198fe",
-                "reference": "c36f5e7cfce482fde5bf8d10d41a53591e0198fe",
+                "url": "https://api.github.com/repos/sebastianbergmann/code-unit-reverse-lookup/zipball/4419fcdb5eabb9caa61a27c7a1db532a6b55dd18",
+                "reference": "4419fcdb5eabb9caa61a27c7a1db532a6b55dd18",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.6"
+                "php": "^5.6 || ^7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~5"
+                "phpunit/phpunit": "^5.7 || ^6.0"
             },
             "type": "library",
             "extra": {
@@ -1843,7 +2015,7 @@
             ],
             "description": "Looks up which function or method a line of code belongs to",
             "homepage": "https://github.com/sebastianbergmann/code-unit-reverse-lookup/",
-            "time": "2016-02-13 06:45:14"
+            "time": "2017-03-04 06:30:41"
         },
         {
             "name": "sebastian/comparator",
@@ -2369,9 +2541,11 @@
     "stability-flags": {
         "fastd/fastd": 20,
         "fastd/config": 20,
+        "fastd/routing": 20,
         "fastd/swoole": 20,
         "fastd/utils": 20,
-        "fastd/testing": 20
+        "fastd/testing": 20,
+        "fastd/http": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
