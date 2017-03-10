@@ -18,26 +18,14 @@ class IndexControllerTest extends TestCase
     {
         $request = $this->request('GET', '/');
         $response = $this->app->handleRequest($request);
-        $this->response($response, (['msg' => 'hello dobee']));
+        $this->json($response, (['msg' => 'hello dobee']));
         $this->isSuccessful($response);
     }
 
     public function testDynamic()
     {
-        $request = $this->request('GET', '/foo');
+        $request = $this->request('GET', '/hello/foo');
         $response = $this->app->handleRequest($request);
-        $this->response($response, ['name' => 'foo', 'query' => []]);
-
-        $request = $this->request('GET', '/bar');
-        $response = $this->app->handleRequest($request);
-        $this->response($response, ['name' => 'bar', 'query' => []]);
-
-        $request = $this->request('GET', '/foo?foo=bar');
-
-        $response = $this->app->handleRequest($request);
-
-        $this->response($response, ['name' => 'foo', 'query' => [
-            'foo' => 'bar'
-        ]]);
+        $this->json($response, ['msg' => 'hello foo', ]);
     }
 }
