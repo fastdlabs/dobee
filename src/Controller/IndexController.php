@@ -14,18 +14,17 @@ use FastD\Http\ServerRequest;
 
 class IndexController
 {
-    public function sayHello(ServerRequest $request)
+    public function welcome(ServerRequest $request)
     {
         return json([
             'msg' => 'hello dobee',
         ]);
     }
 
-    public function dynamic(ServerRequest $request)
+    public function sayHello(ServerRequest $request)
     {
         return json([
-            'name' => $request->getAttribute('name'),
-            'query' => $request->getQueryParams()
+            'msg' => 'hello ' . $request->getAttribute('name', 'dobee'),
         ]);
     }
 }

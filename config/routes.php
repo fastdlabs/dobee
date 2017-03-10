@@ -1,4 +1,4 @@
 <?php
 
-route()->get('/', 'IndexController@sayHello');
-route()->get('/{name}', 'IndexController@dynamic');
+route()->get(['/', 'name' => 'welcome'], 'IndexController@welcome');
+route()->get(['/hello/{name}', 'name' => 'hello'], 'IndexController@sayHello');
