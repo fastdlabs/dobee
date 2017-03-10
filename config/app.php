@@ -41,7 +41,7 @@ return [
     ],
 
     /**
-     *
+     * Application Consoles
      */
     'consoles' => [
         \Console\DemoConsole::class,
