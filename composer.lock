@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9d7b95cc018d7fd866115bb6804aa992",
-    "content-hash": "f8a8048b7c40d69cdb44434b35e93b52",
+    "hash": "734b5bc585002b77d28856c0e27090cc",
+    "content-hash": "47ce826fd760e5c07fae88f838f4a558",
     "packages": [
         {
             "name": "catfan/medoo",
@@ -197,12 +197,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/fastD.git",
-                "reference": "f5fe042b98821f33f780e2ec0a653bffce0d3d8f"
+                "reference": "77978a9a6ec7ba55c792c96578da6195b9a4d4c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/fastD/zipball/f5fe042b98821f33f780e2ec0a653bffce0d3d8f",
-                "reference": "f5fe042b98821f33f780e2ec0a653bffce0d3d8f",
+                "url": "https://api.github.com/repos/JanHuang/fastD/zipball/77978a9a6ec7ba55c792c96578da6195b9a4d4c8",
+                "reference": "77978a9a6ec7ba55c792c96578da6195b9a4d4c8",
                 "shasum": ""
             },
             "require": {
@@ -251,20 +251,20 @@
             "keywords": [
                 "FastD"
             ],
-            "time": "2017-03-10 11:34:11"
+            "time": "2017-03-11 06:02:20"
         },
         {
             "name": "fastd/http",
-            "version": "v3.0.7",
+            "version": "v3.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/http.git",
-                "reference": "a1a3f0a6629f8972308bb27b2b00f44fdfe727cc"
+                "reference": "e6026d0c451565cf99a00bba2c1a59fb93b8eb1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/http/zipball/a1a3f0a6629f8972308bb27b2b00f44fdfe727cc",
-                "reference": "a1a3f0a6629f8972308bb27b2b00f44fdfe727cc",
+                "url": "https://api.github.com/repos/JanHuang/http/zipball/e6026d0c451565cf99a00bba2c1a59fb93b8eb1f",
+                "reference": "e6026d0c451565cf99a00bba2c1a59fb93b8eb1f",
                 "shasum": ""
             },
             "require": {
@@ -295,7 +295,7 @@
                 "FastD",
                 "http"
             ],
-            "time": "2017-03-08 06:21:22"
+            "time": "2017-03-10 13:28:07"
         },
         {
             "name": "fastd/middleware",
@@ -822,16 +822,16 @@
         },
         {
             "name": "symfony/cache",
-            "version": "v3.2.5",
+            "version": "v3.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/cache.git",
-                "reference": "c28526c3b88661905d3cabb811b215bd7eed9ed1"
+                "reference": "38ead350d7c27b08b8da9401cbdbea8121f929a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/cache/zipball/c28526c3b88661905d3cabb811b215bd7eed9ed1",
-                "reference": "c28526c3b88661905d3cabb811b215bd7eed9ed1",
+                "url": "https://api.github.com/repos/symfony/cache/zipball/38ead350d7c27b08b8da9401cbdbea8121f929a4",
+                "reference": "38ead350d7c27b08b8da9401cbdbea8121f929a4",
                 "shasum": ""
             },
             "require": {
@@ -885,11 +885,11 @@
                 "caching",
                 "psr6"
             ],
-            "time": "2017-03-07 15:57:48"
+            "time": "2017-03-08 12:16:26"
         },
         {
             "name": "symfony/config",
-            "version": "v3.2.5",
+            "version": "v3.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
@@ -945,7 +945,7 @@
         },
         {
             "name": "symfony/console",
-            "version": "v3.2.5",
+            "version": "v3.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
@@ -1008,7 +1008,7 @@
         },
         {
             "name": "symfony/debug",
-            "version": "v3.2.5",
+            "version": "v3.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
@@ -1065,7 +1065,7 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v3.2.5",
+            "version": "v3.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
@@ -1173,7 +1173,7 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.2.5",
+            "version": "v3.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
@@ -1532,6 +1532,61 @@
                 "stub"
             ],
             "time": "2017-03-02 20:05:34"
+        },
+        {
+            "name": "phpunit/dbunit",
+            "version": "2.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/dbunit.git",
+                "reference": "5c35d74549c21ba55d0ea74ba89d191a51f8cf25"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/dbunit/zipball/5c35d74549c21ba55d0ea74ba89d191a51f8cf25",
+                "reference": "5c35d74549c21ba55d0ea74ba89d191a51f8cf25",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pdo": "*",
+                "ext-simplexml": "*",
+                "php": "^5.4 || ^7.0",
+                "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0",
+                "symfony/yaml": "^2.1 || ^3.0"
+            },
+            "bin": [
+                "dbunit"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sb@sebastian-bergmann.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "DbUnit port for PHP/PHPUnit to support database interaction testing.",
+            "homepage": "https://github.com/sebastianbergmann/dbunit/",
+            "keywords": [
+                "database",
+                "testing",
+                "xunit"
+            ],
+            "time": "2016-12-02 14:39:14"
         },
         {
             "name": "phpunit/php-code-coverage",
