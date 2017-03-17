@@ -150,16 +150,16 @@
         },
         {
             "name": "fastd/container",
-            "version": "v3.0.1",
+            "version": "v3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/container.git",
-                "reference": "8fe6eb8ff5c5d08679c6388b9cb604f1e0abc205"
+                "reference": "7487900bfc99b06bf62ef0508a5eedf6f574e09b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/container/zipball/8fe6eb8ff5c5d08679c6388b9cb604f1e0abc205",
-                "reference": "8fe6eb8ff5c5d08679c6388b9cb604f1e0abc205",
+                "url": "https://api.github.com/repos/JanHuang/container/zipball/7487900bfc99b06bf62ef0508a5eedf6f574e09b",
+                "reference": "7487900bfc99b06bf62ef0508a5eedf6f574e09b",
                 "shasum": ""
             },
             "require": {
@@ -189,7 +189,7 @@
                 "FastD",
                 "container"
             ],
-            "time": "2017-02-01 09:45:24"
+            "time": "2017-03-17 04:01:41"
         },
         {
             "name": "fastd/fastd",
@@ -197,12 +197,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/fastD.git",
-                "reference": "77978a9a6ec7ba55c792c96578da6195b9a4d4c8"
+                "reference": "c4b9709165cab59dac42d63272d4f51be53fc53a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/fastD/zipball/77978a9a6ec7ba55c792c96578da6195b9a4d4c8",
-                "reference": "77978a9a6ec7ba55c792c96578da6195b9a4d4c8",
+                "url": "https://api.github.com/repos/JanHuang/fastD/zipball/c4b9709165cab59dac42d63272d4f51be53fc53a",
+                "reference": "c4b9709165cab59dac42d63272d4f51be53fc53a",
                 "shasum": ""
             },
             "require": {
@@ -222,7 +222,7 @@
                 "symfony/cache": "~3.2"
             },
             "require-dev": {
-                "phpunit/dbunit": "^2.0"
+                "phpunit/phpunit": "^5.0"
             },
             "bin": [
                 "console",
@@ -251,7 +251,7 @@
             "keywords": [
                 "FastD"
             ],
-            "time": "2017-03-11 06:02:20"
+            "time": "2017-03-17 09:51:06"
         },
         {
             "name": "fastd/http",
@@ -421,12 +421,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/swoole.git",
-                "reference": "be8aeff3e6663107f6ef00063a73085cec5c0820"
+                "reference": "2615016f5ed6dba0ac9519ede86a370ac63aed2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/swoole/zipball/be8aeff3e6663107f6ef00063a73085cec5c0820",
-                "reference": "be8aeff3e6663107f6ef00063a73085cec5c0820",
+                "url": "https://api.github.com/repos/JanHuang/swoole/zipball/2615016f5ed6dba0ac9519ede86a370ac63aed2d",
+                "reference": "2615016f5ed6dba0ac9519ede86a370ac63aed2d",
                 "shasum": ""
             },
             "require": {
@@ -436,6 +436,7 @@
                 "symfony/console": "^3.2"
             },
             "require-dev": {
+                "fzaninotto/faker": "^1.6",
                 "phpunit/phpunit": "^5.0"
             },
             "type": "library",
@@ -458,27 +459,27 @@
                 }
             ],
             "description": "FastD swoole.",
-            "time": "2017-03-10 11:02:35"
+            "time": "2017-03-16 03:38:56"
         },
         {
             "name": "fastd/testing",
-            "version": "v0.2.0",
+            "version": "v0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/testing.git",
-                "reference": "fafc1b7e87b7b01a3d99468c91543ba5076bfd8f"
+                "reference": "93bef323c9b498a18aa801b71b053d8090ae2d51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/testing/zipball/fafc1b7e87b7b01a3d99468c91543ba5076bfd8f",
-                "reference": "fafc1b7e87b7b01a3d99468c91543ba5076bfd8f",
+                "url": "https://api.github.com/repos/JanHuang/testing/zipball/93bef323c9b498a18aa801b71b053d8090ae2d51",
+                "reference": "93bef323c9b498a18aa801b71b053d8090ae2d51",
                 "shasum": ""
             },
             "require": {
                 "fastd/http": "~3.0.0"
             },
             "require-dev": {
-                "phpunit/dbunit": "^2.0"
+                "phpunit/phpunit": "^5.0"
             },
             "type": "library",
             "autoload": {
@@ -489,11 +490,11 @@
             "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
-                    "name": "janhuang",
+                    "name": "JanHuang",
                     "email": "bboyjanhuang@gmail.com"
                 }
             ],
-            "time": "2017-03-10 10:59:28"
+            "time": "2017-03-11 15:31:46"
         },
         {
             "name": "fastd/utils",
@@ -501,12 +502,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/utils.git",
-                "reference": "11a5fcd21ed60a5d26c1aeb062ecf5c06e329fcf"
+                "reference": "d0ef7332bc06400030eec13e1fc2b9e325f9d15e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/utils/zipball/11a5fcd21ed60a5d26c1aeb062ecf5c06e329fcf",
-                "reference": "11a5fcd21ed60a5d26c1aeb062ecf5c06e329fcf",
+                "url": "https://api.github.com/repos/JanHuang/utils/zipball/d0ef7332bc06400030eec13e1fc2b9e325f9d15e",
+                "reference": "d0ef7332bc06400030eec13e1fc2b9e325f9d15e",
                 "shasum": ""
             },
             "require": {
@@ -531,20 +532,20 @@
                     "email": "bboyjanhuang@gmail.com"
                 }
             ],
-            "time": "2017-03-10 11:10:11"
+            "time": "2017-03-15 06:10:27"
         },
         {
             "name": "monolog/monolog",
-            "version": "1.22.0",
+            "version": "1.22.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "bad29cb8d18ab0315e6c477751418a82c850d558"
+                "reference": "1e044bc4b34e91743943479f1be7a1d5eb93add0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/bad29cb8d18ab0315e6c477751418a82c850d558",
-                "reference": "bad29cb8d18ab0315e6c477751418a82c850d558",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/1e044bc4b34e91743943479f1be7a1d5eb93add0",
+                "reference": "1e044bc4b34e91743943479f1be7a1d5eb93add0",
                 "shasum": ""
             },
             "require": {
@@ -609,7 +610,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2016-11-26 00:15:39"
+            "time": "2017-03-13 07:08:03"
         },
         {
             "name": "psr/cache",
@@ -1839,16 +1840,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "5.7.15",
+            "version": "5.7.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "b99112aecc01f62acf3d81a3f59646700a1849e5"
+                "reference": "dafc78e2a7d12139b0e97078d1082326bd09363d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/b99112aecc01f62acf3d81a3f59646700a1849e5",
-                "reference": "b99112aecc01f62acf3d81a3f59646700a1849e5",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/dafc78e2a7d12139b0e97078d1082326bd09363d",
+                "reference": "dafc78e2a7d12139b0e97078d1082326bd09363d",
                 "shasum": ""
             },
             "require": {
@@ -1917,7 +1918,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2017-03-02 15:22:43"
+            "time": "2017-03-15 13:02:34"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
