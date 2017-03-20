@@ -9,7 +9,7 @@
 
 return [
     'host' => 'http://0.0.0.0:9527',
-    'class' => \FastD\Servitization\Server\HTTPServer::class,
+    'class' => \Server\TaskServer::class,
     'options' => [
         'pid_file' => __DIR__ . '/../runtime/pid/' . app()->getName() . '.pid',
         'worker_num' => 10,
