@@ -197,12 +197,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/fastD.git",
-                "reference": "fd3462951117f601740a15719b692c96359521a5"
+                "reference": "57648ba6b12f160a10e8b2d7bc118661525c9bda"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/fastD/zipball/fd3462951117f601740a15719b692c96359521a5",
-                "reference": "fd3462951117f601740a15719b692c96359521a5",
+                "url": "https://api.github.com/repos/JanHuang/fastD/zipball/57648ba6b12f160a10e8b2d7bc118661525c9bda",
+                "reference": "57648ba6b12f160a10e8b2d7bc118661525c9bda",
                 "shasum": ""
             },
             "require": {
@@ -251,7 +251,7 @@
             "keywords": [
                 "FastD"
             ],
-            "time": "2017-03-20 03:21:49"
+            "time": "2017-03-21 15:40:00"
         },
         {
             "name": "fastd/http",
