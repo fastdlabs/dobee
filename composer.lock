@@ -197,12 +197,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/fastD.git",
-                "reference": "57648ba6b12f160a10e8b2d7bc118661525c9bda"
+                "reference": "62fc948f2a788b6082fd47cfe042625d7fb0941b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/fastD/zipball/57648ba6b12f160a10e8b2d7bc118661525c9bda",
-                "reference": "57648ba6b12f160a10e8b2d7bc118661525c9bda",
+                "url": "https://api.github.com/repos/JanHuang/fastD/zipball/62fc948f2a788b6082fd47cfe042625d7fb0941b",
+                "reference": "62fc948f2a788b6082fd47cfe042625d7fb0941b",
                 "shasum": ""
             },
             "require": {
@@ -251,7 +251,7 @@
             "keywords": [
                 "FastD"
             ],
-            "time": "2017-03-21 15:40:00"
+            "time": "2017-03-23 09:38:03"
         },
         {
             "name": "fastd/http",
@@ -421,12 +421,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/swoole.git",
-                "reference": "324a16b8df20454e10d46c875a052ca26cbe01f2"
+                "reference": "d620aaa6ef7ab18d4c189771f621c22922b1972a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/swoole/zipball/324a16b8df20454e10d46c875a052ca26cbe01f2",
-                "reference": "324a16b8df20454e10d46c875a052ca26cbe01f2",
+                "url": "https://api.github.com/repos/JanHuang/swoole/zipball/d620aaa6ef7ab18d4c189771f621c22922b1972a",
+                "reference": "d620aaa6ef7ab18d4c189771f621c22922b1972a",
                 "shasum": ""
             },
             "require": {
@@ -459,7 +459,7 @@
                 }
             ],
             "description": "FastD swoole.",
-            "time": "2017-03-18 05:23:44"
+            "time": "2017-03-22 06:07:25"
         },
         {
             "name": "fastd/testing",
