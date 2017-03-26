@@ -16,6 +16,8 @@ class IndexController
 {
     public function welcome(ServerRequest $request)
     {
+        server()->task('hello dobee');
+
         return json([
             'msg' => 'hello dobee',
         ]);
