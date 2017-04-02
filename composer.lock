@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "834fca56365aadd486855810ae597927",
-    "content-hash": "864094b65b7f3ec4e6fe9056cfb8aace",
+    "hash": "58bbc6042e9fe76425984589c6dd8579",
+    "content-hash": "8847adb5ed3d513d281ccbd1a8f6ae53",
     "packages": [
         {
             "name": "catfan/medoo",
@@ -193,16 +193,16 @@
         },
         {
             "name": "fastd/fastd",
-            "version": "3.1.x-dev",
+            "version": "v3.1.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/fastD.git",
-                "reference": "62fc948f2a788b6082fd47cfe042625d7fb0941b"
+                "reference": "c2fd582dfdb88909eb2ce560217417f7bad9ea30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/fastD/zipball/62fc948f2a788b6082fd47cfe042625d7fb0941b",
-                "reference": "62fc948f2a788b6082fd47cfe042625d7fb0941b",
+                "url": "https://files.phpcomposer.com/files/JanHuang/fastD/c2fd582dfdb88909eb2ce560217417f7bad9ea30.zip",
+                "reference": "c2fd582dfdb88909eb2ce560217417f7bad9ea30",
                 "shasum": ""
             },
             "require": {
@@ -213,7 +213,7 @@
                 "fastd/http": "^3.0",
                 "fastd/middleware": "~1.0.0",
                 "fastd/routing": "^3.0",
-                "fastd/swoole": "2.0.x-dev",
+                "fastd/swoole": "^2.0@beta",
                 "fastd/testing": "^0.2",
                 "fastd/utils": "^0.1",
                 "monolog/monolog": "~1.0",
@@ -251,7 +251,7 @@
             "keywords": [
                 "FastD"
             ],
-            "time": "2017-03-23 09:38:03"
+            "time": "2017-04-02 12:21:48"
         },
         {
             "name": "fastd/http",
@@ -417,16 +417,16 @@
         },
         {
             "name": "fastd/swoole",
-            "version": "2.0.x-dev",
+            "version": "v2.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/swoole.git",
-                "reference": "d620aaa6ef7ab18d4c189771f621c22922b1972a"
+                "reference": "9b2ece4aae0fde3dad5f308a2f3aa5951dd5e2f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/swoole/zipball/d620aaa6ef7ab18d4c189771f621c22922b1972a",
-                "reference": "d620aaa6ef7ab18d4c189771f621c22922b1972a",
+                "url": "https://files.phpcomposer.com/files/JanHuang/swoole/9b2ece4aae0fde3dad5f308a2f3aa5951dd5e2f4.zip",
+                "reference": "9b2ece4aae0fde3dad5f308a2f3aa5951dd5e2f4",
                 "shasum": ""
             },
             "require": {
@@ -436,7 +436,6 @@
                 "symfony/console": "^3.2"
             },
             "require-dev": {
-                "fzaninotto/faker": "^1.6",
                 "phpunit/phpunit": "^5.0"
             },
             "type": "library",
@@ -445,7 +444,7 @@
                     "FastD\\Swoole\\": "src"
                 },
                 "files": [
-                    "src/Support/helpers.php"
+                    "helpers.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -459,7 +458,7 @@
                 }
             ],
             "description": "FastD swoole.",
-            "time": "2017-03-22 06:07:25"
+            "time": "2017-04-01 15:43:54"
         },
         {
             "name": "fastd/testing",
@@ -1591,16 +1590,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "4.0.7",
+            "version": "4.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "09e2277d14ea467e5a984010f501343ef29ffc69"
+                "reference": "ef7b2f56815df854e66ceaee8ebe9393ae36a40d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/09e2277d14ea467e5a984010f501343ef29ffc69",
-                "reference": "09e2277d14ea467e5a984010f501343ef29ffc69",
+                "url": "https://files.phpcomposer.com/files/sebastianbergmann/php-code-coverage/ef7b2f56815df854e66ceaee8ebe9393ae36a40d.zip",
+                "reference": "ef7b2f56815df854e66ceaee8ebe9393ae36a40d",
                 "shasum": ""
             },
             "require": {
@@ -1650,7 +1649,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2017-03-01 09:12:17"
+            "time": "2017-04-02 07:44:40"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -2546,8 +2545,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "fastd/fastd": 20,
-        "fastd/swoole": 20
+        "fastd/fastd": 10,
+        "fastd/swoole": 10
     },
     "prefer-stable": false,
     "prefer-lowest": false,
