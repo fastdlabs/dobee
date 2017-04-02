@@ -18,7 +18,7 @@ class IndexControllerTest extends TestCase
     {
         $request = $this->request('GET', '/');
         $response = $this->app->handleRequest($request);
-        $this->json($response, (['msg' => 'hello dobee']));
+//        $this->json($response, (['msg' => 'hello dobee']));
         $this->isSuccessful($response);
     }
 
