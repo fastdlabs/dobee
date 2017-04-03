@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "58bbc6042e9fe76425984589c6dd8579",
-    "content-hash": "8847adb5ed3d513d281ccbd1a8f6ae53",
+    "hash": "3f5cc70e8f5677669ab4795dce5f65c1",
+    "content-hash": "78a0771955d4ad9b84ede7ee71190f2b",
     "packages": [
         {
             "name": "catfan/medoo",
@@ -193,16 +193,16 @@
         },
         {
             "name": "fastd/fastd",
-            "version": "v3.1.0-beta1",
+            "version": "3.1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/fastD.git",
-                "reference": "c2fd582dfdb88909eb2ce560217417f7bad9ea30"
+                "reference": "74569a7cf4f2195ae82a3c3a3ee3209d4a3d3004"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/JanHuang/fastD/c2fd582dfdb88909eb2ce560217417f7bad9ea30.zip",
-                "reference": "c2fd582dfdb88909eb2ce560217417f7bad9ea30",
+                "url": "https://files.phpcomposer.com/files/JanHuang/fastD/74569a7cf4f2195ae82a3c3a3ee3209d4a3d3004.zip",
+                "reference": "74569a7cf4f2195ae82a3c3a3ee3209d4a3d3004",
                 "shasum": ""
             },
             "require": {
@@ -226,6 +226,7 @@
             },
             "bin": [
                 "console",
+                "client",
                 "server"
             ],
             "type": "library",
@@ -251,7 +252,7 @@
             "keywords": [
                 "FastD"
             ],
-            "time": "2017-04-02 12:21:48"
+            "time": "2017-04-03 14:06:22"
         },
         {
             "name": "fastd/http",
@@ -1839,16 +1840,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "5.7.17",
+            "version": "5.7.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "68752b665d3875f9a38a357e3ecb35c79f8673bf"
+                "reference": "69c4f49ff376af2692bad9cebd883d17ebaa98a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/68752b665d3875f9a38a357e3ecb35c79f8673bf",
-                "reference": "68752b665d3875f9a38a357e3ecb35c79f8673bf",
+                "url": "https://files.phpcomposer.com/files/sebastianbergmann/phpunit/69c4f49ff376af2692bad9cebd883d17ebaa98a1.zip",
+                "reference": "69c4f49ff376af2692bad9cebd883d17ebaa98a1",
                 "shasum": ""
             },
             "require": {
@@ -1917,7 +1918,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2017-03-19 16:52:12"
+            "time": "2017-04-03 02:22:27"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -2545,7 +2546,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "fastd/fastd": 10,
+        "fastd/fastd": 20,
         "fastd/swoole": 10
     },
     "prefer-stable": false,
