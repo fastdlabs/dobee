@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3f5cc70e8f5677669ab4795dce5f65c1",
-    "content-hash": "78a0771955d4ad9b84ede7ee71190f2b",
+    "hash": "6c10fbc4d19b405ea7a0d51fa5161a1c",
+    "content-hash": "39660426b195d626d4267f2575022507",
     "packages": [
         {
             "name": "catfan/medoo",
@@ -197,12 +197,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/fastD.git",
-                "reference": "74569a7cf4f2195ae82a3c3a3ee3209d4a3d3004"
+                "reference": "5783252b4aba456f99e3d9f6bb986fe6f4c69927"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/JanHuang/fastD/74569a7cf4f2195ae82a3c3a3ee3209d4a3d3004.zip",
-                "reference": "74569a7cf4f2195ae82a3c3a3ee3209d4a3d3004",
+                "url": "https://files.phpcomposer.com/files/JanHuang/fastD/5783252b4aba456f99e3d9f6bb986fe6f4c69927.zip",
+                "reference": "5783252b4aba456f99e3d9f6bb986fe6f4c69927",
                 "shasum": ""
             },
             "require": {
@@ -252,7 +252,7 @@
             "keywords": [
                 "FastD"
             ],
-            "time": "2017-04-03 14:06:22"
+            "time": "2017-04-05 01:32:48"
         },
         {
             "name": "fastd/http",
@@ -1533,61 +1533,6 @@
                 "stub"
             ],
             "time": "2017-03-02 20:05:34"
-        },
-        {
-            "name": "phpunit/dbunit",
-            "version": "2.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/dbunit.git",
-                "reference": "5c35d74549c21ba55d0ea74ba89d191a51f8cf25"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/dbunit/zipball/5c35d74549c21ba55d0ea74ba89d191a51f8cf25",
-                "reference": "5c35d74549c21ba55d0ea74ba89d191a51f8cf25",
-                "shasum": ""
-            },
-            "require": {
-                "ext-pdo": "*",
-                "ext-simplexml": "*",
-                "php": "^5.4 || ^7.0",
-                "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0",
-                "symfony/yaml": "^2.1 || ^3.0"
-            },
-            "bin": [
-                "dbunit"
-            ],
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0.x-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Sebastian Bergmann",
-                    "email": "sb@sebastian-bergmann.de",
-                    "role": "lead"
-                }
-            ],
-            "description": "DbUnit port for PHP/PHPUnit to support database interaction testing.",
-            "homepage": "https://github.com/sebastianbergmann/dbunit/",
-            "keywords": [
-                "database",
-                "testing",
-                "xunit"
-            ],
-            "time": "2016-12-02 14:39:14"
         },
         {
             "name": "phpunit/php-code-coverage",
