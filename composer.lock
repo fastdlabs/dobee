@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6c10fbc4d19b405ea7a0d51fa5161a1c",
-    "content-hash": "39660426b195d626d4267f2575022507",
+    "hash": "5fe763f4de20544229cf99fd51e37cc3",
+    "content-hash": "5634f2e0815d222ee449537063d3c972",
     "packages": [
         {
             "name": "catfan/medoo",
@@ -193,16 +193,16 @@
         },
         {
             "name": "fastd/fastd",
-            "version": "3.1.x-dev",
+            "version": "v3.1.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/fastD.git",
-                "reference": "5679154b4fb512000f5f511556e2e9333e0136a2"
+                "reference": "b25dc9cbfc9d2cd33fbc9277d01766002b9e2120"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/JanHuang/fastD/5679154b4fb512000f5f511556e2e9333e0136a2.zip",
-                "reference": "5679154b4fb512000f5f511556e2e9333e0136a2",
+                "url": "https://files.phpcomposer.com/files/JanHuang/fastD/b25dc9cbfc9d2cd33fbc9277d01766002b9e2120.zip",
+                "reference": "b25dc9cbfc9d2cd33fbc9277d01766002b9e2120",
                 "shasum": ""
             },
             "require": {
@@ -253,7 +253,7 @@
             "keywords": [
                 "FastD"
             ],
-            "time": "2017-04-06 09:10:50"
+            "time": "2017-04-07 07:25:48"
         },
         {
             "name": "fastd/http",
@@ -2493,7 +2493,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "fastd/fastd": 20,
+        "fastd/fastd": 10,
         "fastd/swoole": 10
     },
     "prefer-stable": false,
