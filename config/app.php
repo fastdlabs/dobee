@@ -14,16 +14,6 @@ return [
     'name' => 'dobee',
 
     /**
-     * Application environment local/dev/prod
-     */
-    'environment' => 'prod',
-
-    /**
-     * Application timezone
-     */
-    'timezone' => 'PRC',
-
-    /**
      * Application logger path
      */
     'log' => [
@@ -34,6 +24,8 @@ return [
      * Bootstrap service.
      */
     'services' => [
+        \FastD\ServiceProvider\RouteServiceProvider::class,
+        \FastD\ServiceProvider\LoggerServiceProvider::class,
         \FastD\ServiceProvider\DatabaseServiceProvider::class,
         \FastD\ServiceProvider\CacheServiceProvider::class,
     ],

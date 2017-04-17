@@ -8,7 +8,7 @@
  */
 
 return [
-    'host' => 'http://0.0.0.0:9527',
+    'host' => 'http://'.get_local_ip().':9527',
     'class' => \Server\TaskServer::class,
     'options' => [
         'pid_file' => __DIR__ . '/../runtime/pid/' . app()->getName() . '.pid',
@@ -21,7 +21,7 @@ return [
     'listeners' => [
         [
             'class' => \FastD\Servitization\Server\TCPServer::class,
-            'host' => 'tcp://127.0.0.1:9528',
+            'host' => 'tcp://'.get_local_ip().':9528',
         ]
     ],
 ];

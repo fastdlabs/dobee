@@ -9,10 +9,10 @@
 namespace Testing;
 
 
-use FastD\Test\TestCase;
+use FastD\TestCase;
 
 
-class IndexControllerTest extends TestCase
+class WelcomeControllerTest extends TestCase
 {
     public function testSayHello()
     {
@@ -26,6 +26,6 @@ class IndexControllerTest extends TestCase
     {
         $request = $this->request('GET', '/hello/foo');
         $response = $this->app->handleRequest($request);
-        $this->json($response, ['msg' => 'hello foo', ]);
+        $this->equalsJson($response, ['msg' => 'hello foo', ]);
     }
 }

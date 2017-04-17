@@ -12,7 +12,7 @@ namespace Controller;
 
 use FastD\Http\ServerRequest;
 
-class IndexController
+class WelcomeController
 {
     public function welcome(ServerRequest $request)
     {

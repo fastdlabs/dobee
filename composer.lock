@@ -102,16 +102,16 @@
         },
         {
             "name": "fastd/config",
-            "version": "v3.1.0",
+            "version": "v3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/config.git",
-                "reference": "ba1f9988866162b1758ad4db880d580b2535ab1e"
+                "reference": "b7cdc4e732572af1cd94689cfb55bad58920089d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/config/zipball/ba1f9988866162b1758ad4db880d580b2535ab1e",
-                "reference": "ba1f9988866162b1758ad4db880d580b2535ab1e",
+                "url": "https://files.phpcomposer.com/files/JanHuang/config/b7cdc4e732572af1cd94689cfb55bad58920089d.zip",
+                "reference": "b7cdc4e732572af1cd94689cfb55bad58920089d",
                 "shasum": ""
             },
             "require": {
@@ -146,7 +146,7 @@
                 "FastD",
                 "config"
             ],
-            "time": "2017-03-20 03:19:11"
+            "time": "2017-04-16 14:44:43"
         },
         {
             "name": "fastd/container",
@@ -193,16 +193,16 @@
         },
         {
             "name": "fastd/fastd",
-            "version": "v3.1.0-rc1",
+            "version": "v3.1.0-rc2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/fastD.git",
-                "reference": "c3851b49104c938f896bdf9034bf1668abf92905"
+                "reference": "d74af1eee6e6afdabe99e20febeb754279d7abd6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/JanHuang/fastD/c3851b49104c938f896bdf9034bf1668abf92905.zip",
-                "reference": "c3851b49104c938f896bdf9034bf1668abf92905",
+                "url": "https://files.phpcomposer.com/files/JanHuang/fastD/d74af1eee6e6afdabe99e20febeb754279d7abd6.zip",
+                "reference": "d74af1eee6e6afdabe99e20febeb754279d7abd6",
                 "shasum": ""
             },
             "require": {
@@ -253,7 +253,7 @@
             "keywords": [
                 "FastD"
             ],
-            "time": "2017-04-12 11:11:58"
+            "time": "2017-04-17 02:59:40"
         },
         {
             "name": "fastd/http",
@@ -464,16 +464,16 @@
         },
         {
             "name": "fastd/testing",
-            "version": "v0.3.1",
+            "version": "v0.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/testing.git",
-                "reference": "3fa745e92ab438fa44015ce488f53f69038313e1"
+                "reference": "0e16733d771295c81bd00d0d53389230dfaf4eb7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/JanHuang/testing/3fa745e92ab438fa44015ce488f53f69038313e1.zip",
-                "reference": "3fa745e92ab438fa44015ce488f53f69038313e1",
+                "url": "https://files.phpcomposer.com/files/JanHuang/testing/0e16733d771295c81bd00d0d53389230dfaf4eb7.zip",
+                "reference": "0e16733d771295c81bd00d0d53389230dfaf4eb7",
                 "shasum": ""
             },
             "require": {
@@ -496,7 +496,7 @@
                     "email": "bboyjanhuang@gmail.com"
                 }
             ],
-            "time": "2017-04-12 10:53:09"
+            "time": "2017-04-16 14:49:25"
         },
         {
             "name": "fastd/utils",
@@ -1287,16 +1287,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.6.0",
+            "version": "1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "5a5a9fc8025a08d8919be87d6884d5a92520cefe"
+                "reference": "8e6e04167378abf1ddb4d3522d8755c5fd90d102"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/5a5a9fc8025a08d8919be87d6884d5a92520cefe",
-                "reference": "5a5a9fc8025a08d8919be87d6884d5a92520cefe",
+                "url": "https://files.phpcomposer.com/files/myclabs/DeepCopy/8e6e04167378abf1ddb4d3522d8755c5fd90d102.zip",
+                "reference": "8e6e04167378abf1ddb4d3522d8755c5fd90d102",
                 "shasum": ""
             },
             "require": {
@@ -1325,7 +1325,7 @@
                 "object",
                 "object graph"
             ],
-            "time": "2017-01-26 22:05:40"
+            "time": "2017-04-12 18:52:22"
         },
         {
             "name": "phpdocumentor/reflection-common",
