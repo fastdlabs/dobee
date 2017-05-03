@@ -24,13 +24,11 @@ return [
      * Exception handle
      */
     'exception' => [
-        'handle' => function (Exception $e) {
+        'response' => function (Exception $e) {
             return [
                 'msg' => $e->getMessage(),
                 'code' => $e->getCode(),
                 'file' => $e->getFile(),
-                'line' => $e->getLine(),
-                'trace' => explode("\n", $e->getTraceAsString()),
             ];
         },
     ],
