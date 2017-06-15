@@ -17,6 +17,7 @@ return [
      * Application logger path
      */
     'log' => [
+        [\Monolog\Handler\StreamHandler::class, 'info.log', \Monolog\Logger::INFO],
         [\Monolog\Handler\StreamHandler::class, 'error.log', \Monolog\Logger::ERROR]
     ],
 
@@ -29,6 +30,7 @@ return [
                 'msg' => $e->getMessage(),
                 'code' => $e->getCode(),
                 'file' => $e->getFile(),
+                'line' => $e->getLine(),
             ];
         },
     ],

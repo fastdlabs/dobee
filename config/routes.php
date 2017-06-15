@@ -1,4 +1,7 @@
 <?php
 
-route()->get('/', 'WelcomeController@welcome');
-route()->get('/hello/{name}', 'WelcomeController@sayHello');
+$route = route();
+
+$route->get('/', 'WelcomeController@welcome');
+
+$route->get('/ml/svc', 'MlController@svc');
