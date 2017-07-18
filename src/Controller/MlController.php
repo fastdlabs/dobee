@@ -3,9 +3,9 @@
 namespace Controller;
 
 
-use FastD\Http\Response;
 use FastD\Http\ServerRequest;
-use Phpml\Classification\KNearestNeighbors;
+use Phpml\Classification\SVC;
+use Phpml\SupportVectorMachine\Kernel;
 
 class MlController
 {
@@ -18,21 +18,29 @@ class MlController
             [3, 1],
             [4, 1],
             [4, 2],
+            [4, 2],
+            [4, 2],
+            [4, 2],
+            [4, 2],
+            [4, 2],
         ];
         $labels = [
+            '普通用户',
+            'a',
             'a',
             'b',
-            'c',
-            'd',
-            'e',
-            'f',
+            'b',
+            'b',
         ];
 
-        $classifier = new KNearestNeighbors();
-        $classifier->train($samples, $labels);
+        $svc = new SVC(Kernel::LINEAR, $cost = 1000);
+
+        $svc->train($samples, $labels);
+
+        $result = $svc->predict([1, 1]);
 
         return json([
-            'result' => $classifier->predict([1, 4]),
+            'result' => $result,
         ]);
     }
 }
