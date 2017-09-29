@@ -17,7 +17,12 @@ return [
      * Application logger path
      */
     'log' => [
-        [\Monolog\Handler\StreamHandler::class, 'error.log', \Monolog\Logger::ERROR]
+        [
+            \Monolog\Handler\StreamHandler::class,
+            'error.log',
+            \Monolog\Logger::ERROR,
+            \FastD\Logger\Formatter\StashFormatter::class,
+        ],
     ],
 
     /*
@@ -41,6 +46,8 @@ return [
         \FastD\ServiceProvider\LoggerServiceProvider::class,
         \FastD\ServiceProvider\DatabaseServiceProvider::class,
         \FastD\ServiceProvider\CacheServiceProvider::class,
+        \FastD\ServiceProvider\ProcessorServiceProvider::class,
+        \FastD\ServiceProvider\MoltenServiceProvider::class,
     ],
 
     /**

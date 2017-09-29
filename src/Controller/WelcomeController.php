@@ -17,7 +17,7 @@ class WelcomeController
     public function welcome(ServerRequest $request)
     {
         return json([
-            'msg' => 'hello dobee',
+            'msg' => 'hello fastd',
         ]);
     }
 
