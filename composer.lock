@@ -209,12 +209,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/fastD.git",
-                "reference": "43d4b3d1624fee774daa1f99d85e18dbe4736521"
+                "reference": "c8f3a35d64ba820cfeb054358558fe2d347373c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/fastD/zipball/43d4b3d1624fee774daa1f99d85e18dbe4736521",
-                "reference": "43d4b3d1624fee774daa1f99d85e18dbe4736521",
+                "url": "https://api.github.com/repos/JanHuang/fastD/zipball/c8f3a35d64ba820cfeb054358558fe2d347373c5",
+                "reference": "c8f3a35d64ba820cfeb054358558fe2d347373c5",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -272,20 +272,20 @@
             "keywords": [
                 "FastD"
             ],
-            "time": "2017-09-29 07:29:33"
+            "time": "2017-10-12 10:58:47"
         },
         {
             "name": "fastd/http",
-            "version": "v3.0.23",
+            "version": "v3.0.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/http.git",
-                "reference": "12989c48d80b72049f0acb617c7fd600fca4df7f"
+                "reference": "52f2fc087d3ff322d7db7f13b81021dca2547039"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/http/zipball/12989c48d80b72049f0acb617c7fd600fca4df7f",
-                "reference": "12989c48d80b72049f0acb617c7fd600fca4df7f",
+                "url": "https://api.github.com/repos/JanHuang/http/zipball/52f2fc087d3ff322d7db7f13b81021dca2547039",
+                "reference": "52f2fc087d3ff322d7db7f13b81021dca2547039",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -322,7 +322,7 @@
                 "FastD",
                 "http"
             ],
-            "time": "2017-09-12 06:25:56"
+            "time": "2017-10-12 10:16:38"
         },
         {
             "name": "fastd/middleware",

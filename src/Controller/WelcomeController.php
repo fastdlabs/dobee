@@ -17,8 +17,8 @@ class WelcomeController
     public function welcome(ServerRequest $request)
     {
         return json([
-            'msg' => 'hello fastd',
-        ]);
+            'args' => $request->getQueryParams()
+        ])->withFileDescriptor(1);
     }
 
     public function sayHello(ServerRequest $request)

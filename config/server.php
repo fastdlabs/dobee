@@ -8,8 +8,8 @@
  */
 
 return [
-    'host' => 'http://'.get_local_ip().':9527',
-    'class' => \Server\TaskServer::class,
+    'host' => 'ws://'.get_local_ip().':9527',
+    'class' => \FastD\Servitization\Server\WebSocketServer::class,
     'options' => [
         'user' => 'nobody',
         'group' => 'nogroup',
@@ -23,9 +23,6 @@ return [
 
     ],
     'listeners' => [
-        [
-            'class' => \FastD\Servitization\Server\TCPServer::class,
-            'host' => 'tcp://'.get_local_ip().':9528',
-        ]
+
     ],
 ];
