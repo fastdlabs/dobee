@@ -12,7 +12,7 @@ namespace Testing;
 use FastD\TestCase;
 
 
-class WelcomeControllerTest extends \PHPUnit_Framework_TestCase
+class WelcomeControllerTest extends TestCase
 {
     public function testSayHello()
     {

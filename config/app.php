@@ -33,7 +33,15 @@ return [
             return [
                 'msg' => $e->getMessage(),
                 'code' => $e->getCode(),
+            ];
+        },
+        'log' => function (Exception $e) {
+            return [
+                'msg' => $e->getMessage(),
+                'code' => $e->getCode(),
                 'file' => $e->getFile(),
+                'line' => $e->getLine(),
+                'trace' => explode("\n", $e->getTraceAsString()),
             ];
         },
     ],
@@ -46,7 +54,6 @@ return [
         \FastD\ServiceProvider\LoggerServiceProvider::class,
         \FastD\ServiceProvider\DatabaseServiceProvider::class,
         \FastD\ServiceProvider\CacheServiceProvider::class,
-        \FastD\ServiceProvider\ProcessorServiceProvider::class,
         \FastD\ServiceProvider\MoltenServiceProvider::class,
     ],
 
