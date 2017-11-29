@@ -209,12 +209,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/fastD.git",
-                "reference": "c8f3a35d64ba820cfeb054358558fe2d347373c5"
+                "reference": "b40a7e6d7f954a1a4674825cb906aada284cf36b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/fastD/zipball/c8f3a35d64ba820cfeb054358558fe2d347373c5",
-                "reference": "c8f3a35d64ba820cfeb054358558fe2d347373c5",
+                "url": "https://api.github.com/repos/JanHuang/fastD/zipball/b40a7e6d7f954a1a4674825cb906aada284cf36b",
+                "reference": "b40a7e6d7f954a1a4674825cb906aada284cf36b",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -272,7 +272,7 @@
             "keywords": [
                 "FastD"
             ],
-            "time": "2017-10-12 10:58:47"
+            "time": "2017-10-14 10:24:01"
         },
         {
             "name": "fastd/http",
@@ -537,16 +537,16 @@
         },
         {
             "name": "fastd/swoole",
-            "version": "v2.0.2",
+            "version": "v2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/swoole.git",
-                "reference": "64049e58a0eee9c8ad64453a49823f553e59100b"
+                "reference": "49db592ea256a8df6e7e9daba5a1b6c80d805a4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/swoole/zipball/64049e58a0eee9c8ad64453a49823f553e59100b",
-                "reference": "64049e58a0eee9c8ad64453a49823f553e59100b",
+                "url": "https://api.github.com/repos/JanHuang/swoole/zipball/49db592ea256a8df6e7e9daba5a1b6c80d805a4d",
+                "reference": "49db592ea256a8df6e7e9daba5a1b6c80d805a4d",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -584,7 +584,7 @@
                 }
             ],
             "description": "FastD swoole.",
-            "time": "2017-09-20 03:59:39"
+            "time": "2017-10-13 02:51:04"
         },
         {
             "name": "fastd/testing",
@@ -1878,16 +1878,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "5.7.22",
+            "version": "5.7.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "10df877596c9906d4110b5b905313829043f2ada"
+                "reference": "78532d5269d984660080d8e0f4c99c5c2ea65ffe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/10df877596c9906d4110b5b905313829043f2ada",
-                "reference": "10df877596c9906d4110b5b905313829043f2ada",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/78532d5269d984660080d8e0f4c99c5c2ea65ffe",
+                "reference": "78532d5269d984660080d8e0f4c99c5c2ea65ffe",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1962,7 +1962,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2017-09-24 07:23:38"
+            "time": "2017-10-15 06:13:55"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
