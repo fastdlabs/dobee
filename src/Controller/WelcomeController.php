@@ -19,22 +19,13 @@ use FastD\Http\ServerRequest;
 class WelcomeController
 {
     /**
-     * @route('/abc')
-     *
      * @param ServerRequest $request
      * @return $this
      */
     public function welcome(ServerRequest $request)
     {
         return json([
-            'args' => $request->getParsedBody()
-        ])->withFileDescriptor(2);
-    }
-
-    public function sayHello(ServerRequest $request)
-    {
-        return json([
-            'msg' => 'hello ' . $request->getAttribute('name', 'dobee'),
+            'msg' => 'welcome fastd'
         ]);
     }
 }

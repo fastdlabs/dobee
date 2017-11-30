@@ -9,9 +9,9 @@
 
 return [
     'demo' => [
-        'process' => \Processor\DemoProcessor::class,
+        'process' => \Process\DemoProcess::class,
         'options' => [
-            'foo' => 'bar',
+
         ],
     ],
 ];

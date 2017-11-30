@@ -33,6 +33,9 @@ return [
             return [
                 'msg' => $e->getMessage(),
                 'code' => $e->getCode(),
+                'file' => $e->getFile(),
+                'line' => $e->getLine(),
+                'trace' => explode("\n", $e->getTraceAsString()),
             ];
         },
         'log' => function (Exception $e) {
@@ -55,13 +58,6 @@ return [
         \FastD\ServiceProvider\DatabaseServiceProvider::class,
         \FastD\ServiceProvider\CacheServiceProvider::class,
         \FastD\ServiceProvider\MoltenServiceProvider::class,
-    ],
-
-    /**
-     * Application Consoles
-     */
-    'consoles' => [
-
     ],
 
     /**

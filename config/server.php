@@ -8,8 +8,8 @@
  */
 
 return [
-    'host' => 'ws://'.get_local_ip().':9527',
-    'class' => \FastD\Servitization\Server\WebSocketServer::class,
+    'host' => 'ws://'.get_local_ip().':9999',
+    'class' => \FastD\Servitization\Server\HTTPServer::class,
     'options' => [
         'user' => 'nobody',
         'group' => 'nogroup',
@@ -20,7 +20,7 @@ return [
         'task_worker_num' => 20,
     ],
     'processes' => [
-
+        \Process\DemoProcess::class
     ],
     'listeners' => [
 
