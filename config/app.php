@@ -21,7 +21,6 @@ return [
             \Monolog\Handler\StreamHandler::class,
             'error.log',
             \Monolog\Logger::ERROR,
-            \FastD\Logger\Formatter\StashFormatter::class,
         ],
     ],
 
