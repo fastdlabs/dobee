@@ -8,11 +8,9 @@
  */
 
 return [
-    'host' => 'ws://'.get_local_ip().':9999',
+    'host' => get_local_ip().':9999',
     'class' => \FastD\Servitization\Server\HTTPServer::class,
     'options' => [
-        'user' => 'nobody',
-        'group' => 'nogroup',
         'pid_file' => __DIR__ . '/../runtime/pid/' . app()->getName() . '.pid',
         'log_file' => __DIR__ . '/../runtime/logs/' . app()->getName() . '.pid',
         'log_level' => 5,
