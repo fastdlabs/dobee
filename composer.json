@@ -12,9 +12,9 @@
     ],
     "require": {
         "php": ">=5.6",
-        "fastd/fastd": "3.2.x-dev",
+        "fastd/fastd": "^3.2@beta",
+        "fastd/swoole": "^2.2@beta",
         "fastd/migration": "^0.1@beta",
-        "fastd/swoole": "develop-dev",
         "fastd/query-builder": "^2.0@beta"
     },
     "require-dev": {
