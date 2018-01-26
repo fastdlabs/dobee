@@ -13,6 +13,27 @@ return [
      */
     'name' => 'dobee',
 
+    /*
+     * The application timezone.
+     */
+    'timezone' => 'PRC',
+
+    /**
+     * Bootstrap service.
+     */
+    'services' => [
+        \FastD\ServiceProvider\RouteServiceProvider::class,
+        \FastD\ServiceProvider\LoggerServiceProvider::class,
+        \FastD\ServiceProvider\DatabaseServiceProvider::class,
+        \FastD\ServiceProvider\CacheServiceProvider::class,
+    ],
+
+    /**
+     * Http middleware
+     */
+    'middleware' => [
+    ],
+
     /**
      * Application logger path
      */
@@ -46,37 +67,5 @@ return [
                 'trace' => explode("\n", $e->getTraceAsString()),
             ];
         },
-    ],
-
-    /**
-     * Bootstrap service.
-     */
-    'services' => [
-        \FastD\ServiceProvider\RouteServiceProvider::class,
-        \FastD\ServiceProvider\LoggerServiceProvider::class,
-        \FastD\ServiceProvider\DatabaseServiceProvider::class,
-        \FastD\ServiceProvider\CacheServiceProvider::class,
-        \FastD\ServiceProvider\MoltenServiceProvider::class,
-    ],
-
-    /**
-     * Http middleware
-     */
-    'middleware' => [
-        'basic.auth' => new FastD\BasicAuthenticate\HttpBasicAuthentication([
-            'authenticator' => [
-                'class' => \FastD\BasicAuthenticate\PhpAuthenticator::class,
-                'params' => [
-                    'foo' => 'bar'
-                ]
-            ],
-            'response' => [
-                'class' => \FastD\Http\JsonResponse::class,
-                'data' => [
-                    'msg' => 'not allow access',
-                    'code' => 401
-                ]
-            ]
-        ])
     ],
 ];
