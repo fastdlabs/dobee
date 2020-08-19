@@ -10,9 +10,9 @@
 
 FastD API 开发骨架
 
-### Documentation
+### 文档
 
-* [简体中文文档](https://github.com/JanHuang/fastD/blob/master/docs/zh_CN/1-1-about-fastd.md)
+* [中文文档](https://fastdlabs.com/)
 
 ### Support
 

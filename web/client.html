@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Client</title>
+</head>
+<body>
+<script>
+    var ws = new WebSocket('ws://192.168.2.101:9527');
+    ws.onopen = function () {
+        ws.send(JSON.stringify({
+            "method": "GET",
+            "path": "/",
+            "args": []
+        }));
+    };
+    ws.onmessage = function (evt) {
+        console.log( "Received Message: " + evt.data);
+    };
+</script>
+</body>
+</html>

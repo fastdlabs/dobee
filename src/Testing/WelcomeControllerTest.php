@@ -18,14 +18,7 @@ class WelcomeControllerTest extends TestCase
     {
         $request = $this->request('GET', '/');
         $response = $this->app->handleRequest($request);
-//        $this->json($response, (['msg' => 'hello dobee']));
+        $this->equalsJson($response, (['msg' => 'welcome fastd']));
         $this->isSuccessful($response);
-    }
-
-    public function testDynamic()
-    {
-        $request = $this->request('GET', '/hello/foo');
-        $response = $this->app->handleRequest($request);
-        $this->equalsJson($response, ['msg' => 'hello foo', ]);
     }
 }

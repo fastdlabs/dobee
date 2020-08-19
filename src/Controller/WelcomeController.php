@@ -11,20 +11,20 @@ namespace Controller;
 
 
 use FastD\Http\ServerRequest;
+use FastD\Middleware\DelegateInterface;
+use FastD\Routing\Handle\RouteHandleInterface;
+use Psr\Http\Message\ResponseInterface;
 
-class WelcomeController
+/**
+ * Class WelcomeController
+ * @package Controller
+ */
+class WelcomeController implements RouteHandleInterface
 {
-    public function welcome(ServerRequest $request)
+    public function handle(ServerRequest $request, DelegateInterface $delegate): ResponseInterface
     {
         return json([
-            'msg' => 'hello dobee',
-        ]);
-    }
-
-    public function sayHello(ServerRequest $request)
-    {
-        return json([
-            'msg' => 'hello ' . $request->getAttribute('name', 'dobee'),
+            'msg' => 'welcome fastd'
         ]);
     }
 }

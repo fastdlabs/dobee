@@ -3,7 +3,9 @@
     "type": "project",
     "license": "MIT",
     "minimum-stability": "stable",
-    "keywords": ["FastD"],
+    "keywords": [
+        "FastD"
+    ],
     "authors": [
         {
             "name": "JanHuang",
@@ -11,12 +13,21 @@
         }
     ],
     "require": {
-        "php": ">=5.6",
-        "fastd/fastd": "^3.1"
+        "php": ">=7.4",
+        "fastd/container": "dev-develop",
+        "fastd/config": "dev-develop",
+        "fastd/middleware": "dev-develop",
+        "fastd/routing": "dev-develop",
+        "fastd/http": "dev-develop",
+        "fastd/fastd": "dev-develop",
+        "monolog/monolog": "^1.0",
+        "symfony/console": "^4.0",
+        "ext-json": "*"
     },
     "require-dev": {
-        "phpunit/dbunit": "^2.0",
-        "php-ai/php-ml": "^0.4.1"
+        "phpunit/phpunit": "^6.0",
+        "fastd/swoole": "dev-develop",
+        "eaglewu/swoole-ide-helper": "dev-master"
     },
     "config": {
         "bin-dir": "bin"
