@@ -9,8 +9,9 @@
 
 return [
     'url' => 'http://localhost:9999',
-    'server' => \FastD\Swoole\Server\HTTPServer::class,
-    'handle' => \FastD\Runtime\Swoole\Handle\HttpHandle::class,
+    'server' => \FastD\Swoole\Server\HTTPServer::class, // 服务器
+    'handle' => \FastD\Runtime\Swoole\Handle\HttpHandle::class, // 事件监听处理器
+    // swoole server 配置项，与官网保持一致: https://wiki.swoole.com/#/server/setting
     'options' => [
         'pid_file' => __DIR__ . '/../runtime/pid/' . app()->getName() . '.pid',
         'log_file' => __DIR__ . '/../runtime/logs/' . app()->getName() . '.pid',
