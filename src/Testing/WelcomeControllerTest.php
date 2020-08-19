@@ -9,15 +9,13 @@
 namespace Testing;
 
 
-use FastD\TestCase;
-
+use FastD\Testing\TestCase;
 
 class WelcomeControllerTest extends TestCase
 {
     public function testSayHello()
     {
-        $request = $this->request('GET', '/');
-        $response = $this->app->handleRequest($request);
+        $response = $this->handleRequest('GET', '/');
         $this->equalsJson($response, (['msg' => 'welcome fastd']));
         $this->isSuccessful($response);
     }
