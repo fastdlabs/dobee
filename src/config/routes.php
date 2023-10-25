@@ -1,4 +1,4 @@
 <?php
 $router = router();
 
-$router->get("GET", \http\Welcome::class);
+$router->get("/", \http\Welcome::class);

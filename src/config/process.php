@@ -10,8 +10,6 @@
 return [
     'demo' => [
         'process' => \process\DemoProcess::class,
-        'options' => [
-
-        ],
+        'options' => [],
     ],
 ];

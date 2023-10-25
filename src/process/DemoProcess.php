@@ -1,12 +1,10 @@
 <?php
 
-
 namespace process;
 
+use FastD\Swoole\Process\AbstractProcess;
 
-use FastD\Swoole\Process\Process;
-
-class DemoProcess extends Process
+class DemoProcess extends AbstractProcess
 {
     public function handle(): void
     {
