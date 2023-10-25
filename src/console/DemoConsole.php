@@ -7,7 +7,7 @@
  * @link      http://www.fast-d.cn/
  */
 
-namespace Console;
+namespace console;
 
 
 use Symfony\Component\Console\Command\Command;

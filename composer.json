@@ -19,14 +19,14 @@
         "fastd/middleware": "dev-develop",
         "fastd/routing": "dev-develop",
         "fastd/http": "dev-develop",
+        "fastd/swoole": "dev-develop",
         "fastd/fastd": "dev-develop",
         "monolog/monolog": "^1.0",
-        "symfony/console": "^4.0",
+        "symfony/console": "^5.0",
         "ext-json": "*"
     },
     "require-dev": {
-        "phpunit/phpunit": "^6.0",
-        "fastd/swoole": "dev-develop",
+        "phpunit/phpunit": "^9.0",
         "eaglewu/swoole-ide-helper": "dev-master"
     },
     "config": {
@@ -34,7 +34,8 @@
     },
     "autoload": {
         "psr-4": {
-            "": "src"
+            "": "src",
+            "tests\\": "tests"
         }
     }
 }

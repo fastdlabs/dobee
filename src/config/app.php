@@ -20,7 +20,6 @@ return [
 
     'logger' => [
         [
-            'handle' => \Monolog\Handler\StreamHandler::class,
             'level' => \Monolog\Logger::WARNING,
             'path' => '',
         ]

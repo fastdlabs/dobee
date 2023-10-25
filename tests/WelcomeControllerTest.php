@@ -6,7 +6,7 @@
  * @link      https://www.github.com/janhuang
  * @link      http://www.fast-d.cn/
  */
-namespace Testing;
+namespace tests;
 
 
 use FastD\Testing\TestCase;

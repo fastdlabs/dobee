@@ -9,7 +9,7 @@
 
 return [
     'demo' => [
-        'process' => \Process\DemoProcess::class,
+        'process' => \process\DemoProcess::class,
         'options' => [
 
         ],

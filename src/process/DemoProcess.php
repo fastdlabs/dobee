@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Process;
+namespace process;
 
 
 use FastD\Swoole\Process\Process;

@@ -13,8 +13,6 @@ include __DIR__ . '/../vendor/autoload.php';
 use FastD\Application;
 use FastD\Runtime\FPM\FastCGI;
 
-$app = new Application(__DIR__ . '/..');
-
-$cgi = new FastCGI($app);
+$cgi = new FastCGI(new Application(__DIR__ . '/..'));
 
 $cgi->run();
