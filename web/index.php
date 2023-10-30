@@ -10,9 +10,8 @@ declare(strict_types=1);
 
 include __DIR__ . '/../vendor/autoload.php';
 
-use FastD\Application;
-use FastD\Runtime\FPM\FastCGI;
+use FastD\Server\FastCGI;
 
-$cgi = new FastCGI(new Application(__DIR__ . '/..'));
+$cgi = new FastCGI(__DIR__ . '/..');
 
 $cgi->run();

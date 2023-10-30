@@ -21,6 +21,8 @@
         "fastd/http": "dev-develop",
         "fastd/swoole": "dev-develop",
         "fastd/fastd": "dev-develop",
+        "fastd/medoodb": "dev-develop",
+        "fastd/cache": "dev-develop",
         "monolog/monolog": "^1.0",
         "symfony/console": "^5.0",
         "ext-json": "*"

@@ -15,13 +15,9 @@ return [
      * Bootstrap default service provider
      */
     'services' => [
-        \FastD\Service\RouteService::class,
+        \FastD\Route\RouteService::class,
+        \FastD\MedooDB\ServiceProvider\DatabaseServiceProvider::class,
+        \FastD\Cache\ServiceProvider\CacheServiceProvider::class,
+        \FastD\Cache\ServiceProvider\ServerRequestCacheProvider::class,
     ],
-
-    'logger' => [
-        [
-            'level' => \Monolog\Logger::WARNING,
-            'path' => '',
-        ]
-    ]
 ];
