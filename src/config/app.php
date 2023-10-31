@@ -4,7 +4,7 @@ return [
     /*
      * The application name.
      */
-    'name' => 'fast-d',
+    'name' => 'fastd',
 
     /*
      * The application timezone.
