@@ -11,8 +11,8 @@ class Welcome implements MiddlewareInterface
 {
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {
-        $db = container()->get('database')->getDatabase('default');
-        $cache = container()->get('cache')->getCache('file');
+        $db = app()->get('database')->getDatabase('default');
+        $cache = app()->get('cache')->getCache('file');
 
         return json([
             'foo' => 'bar',
