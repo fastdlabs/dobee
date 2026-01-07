@@ -1,29 +1,23 @@
 <?php
-/**
- * @author    jan huang <bboyjanhuang@gmail.com>
- * @copyright 2016
- *
- * @link      https://www.github.com/janhuang
- * @link      http://www.fast-d.cn/
- */
 
-namespace console;
+declare(strict_types=1);
 
+namespace terminal\console;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class DemoConsole extends Command
+class Welcome extends Command
 {
     public function configure(): void
     {
-        $this->setName('demo');
+        $this->setName('welcome');
     }
 
     public function execute(InputInterface $input, OutputInterface $output): int
     {
-        $output->writeln('hello world');
+        $output->writeln('console: welcome fastd by swoole');
         return 0;
     }
 }

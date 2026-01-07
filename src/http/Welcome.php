@@ -1,7 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
 namespace http;
 
+use FastD\Http\Response\Text;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\MiddlewareInterface;
@@ -11,13 +14,6 @@ class Welcome implements MiddlewareInterface
 {
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {
-        $db = app()->get('database')->getDatabase('default');
-        $cache = app()->get('cache')->getCache('file');
-
-        return json([
-            'foo' => 'bar',
-            'connection' => $db,
-            'cache' => $cache,
-        ]);
+        return new Text('welcome fastd by swoole');
     }
 }

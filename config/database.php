@@ -3,11 +3,11 @@
 return [
     'default' => [
         'type' => 'mysql',
-        'host' => '127.0.0.1',
-        'database' => 'test',
-        'username' => 'root',
-        'password' => '',
+        'host' => '%database.default.host%',
+        'database' => '%database.default.name%',
+        'username' => '%database.default.user%',
+        'password' => '%database.default.pass%',
         'charset' => 'utf8',
         'port' => 3306,
-    ]
+    ],
 ];

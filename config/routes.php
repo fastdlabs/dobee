@@ -1,5 +1,5 @@
 <?php
 
 return [
-    ['GET', '/', \http\Welcome::class]
+    ['GET', '/', \http\Welcome::class,]
 ];

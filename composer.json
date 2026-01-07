@@ -2,7 +2,7 @@
     "name": "fastd/dobee",
     "type": "project",
     "license": "MIT",
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "keywords": [
         "FastD"
     ],
@@ -12,32 +12,74 @@
             "email": "bboyjanhuang@gmail.com"
         }
     ],
-    "require": {
-        "php": ">=7.4 || ^8.0",
-        "fastd/container": "dev-develop",
-        "fastd/config": "dev-develop",
-        "fastd/middleware": "dev-develop",
-        "fastd/routing": "dev-develop",
-        "fastd/http": "dev-develop",
-        "fastd/swoole": "dev-develop",
-        "fastd/fastd": "dev-develop",
-        "fastd/medoodb": "dev-develop",
-        "fastd/cache": "dev-develop",
-        "monolog/monolog": "^1.0",
-        "symfony/console": "^5.0",
-        "ext-json": "*"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^9.0",
-        "eaglewu/swoole-ide-helper": "dev-master"
-    },
-    "config": {
-        "bin-dir": "bin"
-    },
     "autoload": {
         "psr-4": {
             "": "src",
             "tests\\": "tests"
         }
+    },
+    "require": {
+        "php": ">=8.2",
+        "ext-json": "*",
+        "ext-pdo": "*",
+        "fastd/container": "dev-develop",
+        "fastd/config": "dev-develop",
+        "fastd/middleware": "dev-develop",
+        "fastd/swoole": "dev-develop",
+        "fastd/http": "dev-develop",
+        "fastd/routing": "dev-develop",
+        "fastd/fastd": "dev-develop",
+        "fastd/medoodb": "dev-develop",
+        "fastd/cache": "dev-develop",
+        "monolog/monolog": "^3.0",
+        "symfony/console": "^8.1",
+        "symfony/yaml": "^8.1",
+        "symfony/cache": "*",
+        "catfan/medoo": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0",
+        "swoole/ide-helper": "@dev"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "/Users/janhuang/PhpstormProjects/fastd/container"
+        },
+        {
+            "type": "path",
+            "url": "/Users/janhuang/PhpstormProjects/fastd/config"
+        },
+        {
+            "type": "path",
+            "url": "/Users/janhuang/PhpstormProjects/fastd/middleware"
+        },
+        {
+            "type": "path",
+            "url": "/Users/janhuang/PhpstormProjects/fastd/swoole"
+        },
+        {
+            "type": "path",
+            "url": "/Users/janhuang/PhpstormProjects/fastd/http"
+        },
+        {
+            "type": "path",
+            "url": "/Users/janhuang/PhpstormProjects/fastd/routing"
+        },
+        {
+            "type": "path",
+            "url": "/Users/janhuang/PhpstormProjects/fastd/fastD"
+        },
+        {
+            "type": "path",
+            "url": "/Users/janhuang/PhpstormProjects/fastd/medoodb"
+        },
+        {
+            "type": "path",
+            "url": "/Users/janhuang/PhpstormProjects/fastd/cache"
+        }
+    ],
+    "config": {
+        "bin-dir": "bin"
     }
 }
