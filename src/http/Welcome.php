@@ -14,6 +14,6 @@ class Welcome implements MiddlewareInterface
 {
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {
-        return new Text('welcome fastd by swoole');
+        return text('welcome fastd by ' . runtime()->environment);
     }
 }

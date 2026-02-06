@@ -21,7 +21,8 @@
          'directory' => __DIR__ . '/../runtime/cache/',
      ],
      // 中间件所需缓存
-     'httpCache' => [
+     'xmCache' => [
+         'enable' => false,
          'adapter' => [
              'class' => \Symfony\Component\Cache\Adapter\FilesystemAdapter::class,
          ],
