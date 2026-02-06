@@ -17,7 +17,8 @@ class Welcome extends Command
 
     public function execute(InputInterface $input, OutputInterface $output): int
     {
-        $output->writeln('console: welcome fastd by swoole');
+        info('console log');
+        $output->writeln('console: welcome fastd by console');
         return 0;
     }
 }

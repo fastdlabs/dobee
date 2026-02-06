@@ -4,17 +4,13 @@ declare(strict_types=1);
 
 namespace terminal\process;
 
-use FastD\Swoole\Process\AbstractProcess;
+use FastD\Swoole\Process\Worker;
 
-class WelcomeProcess extends AbstractProcess
+class WelcomeProcess extends Worker
 {
-    public function handle(): void
+    public function process(Worker $worker): void
     {
-        echo 'process: welcome fastd by swoole';
-    }
-
-    public function exit(int $pid, int $code, int $signal): void
-    {
-        echo 'exit welcome process';
+        info('process log');
+        echo 'process: welcome fastd by process' . PHP_EOL;
     }
 }

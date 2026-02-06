@@ -3,7 +3,7 @@
 // 应用引导文件，添加改文件的配置可以在 service register 的时候通过 Application::config 进行加载，否则只能通过 config() 手动加载
 // config()->parse('路径')->get('文件名');
 return [
-    'name' => 'dobee',
+    'name' => 'fastd8',
 
     'root' => __DIR__ . '/..',
 
@@ -14,17 +14,19 @@ return [
         'level' => \Monolog\Level::Debug,
     ],
 
-    'routes'    => __DIR__ . '/routes.php',
+    'route'    => __DIR__ . '/../config/route.php',
 
-    'services'  => __DIR__ . '/services.php',
+    'service'  => __DIR__ . '/../config/service.php',
 
-    'cache'     => __DIR__ . '/cache.php',
+    'listener'  => __DIR__ . '/../config/listener.php',
 
-    'database'  => __DIR__ . '/database.php',
+    'database'  => __DIR__ . '//../config/database.php',
 
-    'swoole'    => __DIR__ . '/swoole.php',
+    'cache'     => __DIR__ . '/../config/cache.php',
 
-    'commands'  => __DIR__ . '/commands.php',
+    'swoole'    => __DIR__ . '/../config/swoole.php',
 
-    'processes' => __DIR__ . '/processes.php',
+    'command'  => __DIR__ . '/../config/command.php',
+
+    'process' => __DIR__ . '/../config/process.php',
 ];

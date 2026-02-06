@@ -27,7 +27,7 @@
              'class' => \Symfony\Component\Cache\Adapter\FilesystemAdapter::class,
          ],
          'lifetime' => 60,
-         'directory' => __DIR__ . '/../runtime/http/',
+         'directory' => __DIR__ . '/../runtime/cache/http/',
          'cache_keys' => ['foo',], // 会根据设置的 keys 列表进行缓存 key 处理
      ],
      // 动态类型缓存
