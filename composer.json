@@ -2,6 +2,8 @@
     "name": "fastd/dobee",
     "type": "project",
     "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "keywords": [
         "FastD"
     ],
@@ -13,22 +15,64 @@
     ],
     "autoload": {
         "psr-4": {
-            "App\\": "src"
+            "": "src"
         }
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../container"
+        },
+        {
+            "type": "path",
+            "url": "../config"
+        },
+        {
+            "type": "path",
+            "url": "../event"
+        },
+        {
+            "type": "path",
+            "url": "../middleware"
+        },
+        {
+            "type": "path",
+            "url": "../http"
+        },
+        {
+            "type": "path",
+            "url": "../routing"
+        },
+        {
+            "type": "path",
+            "url": "../swoole"
+        },
+        {
+            "type": "path",
+            "url": "../cache"
+        },
+        {
+            "type": "path",
+            "url": "../medoodb"
+        },
+        {
+            "type": "path",
+            "url": "../fastD"
+        }
+    ],
     "require": {
         "php": ">=8.2",
         "ext-json": "*",
         "ext-pdo": "*",
-        "fastd/cache": "^8.0",
-        "fastd/container": "^8.0",
-        "fastd/config": "^8.0",
-        "fastd/middleware": "^8.0",
-        "fastd/http": "^8.0",
-        "fastd/routing": "^8.0",
-        "fastd/medoodb": "^8.0",
-        "fastd/swoole": "^8.0",
-        "fastd/fastd": "^8.0",
+        "fastd/cache": "dev-master",
+        "fastd/container": "dev-master",
+        "fastd/config": "dev-master",
+        "fastd/middleware": "dev-master",
+        "fastd/http": "dev-master",
+        "fastd/routing": "dev-master",
+        "fastd/medoodb": "dev-master",
+        "fastd/swoole": "dev-master",
+        "fastd/fastd": "dev-master",
 
         "monolog/monolog": "^3.0",
         "symfony/console": "^8.1",
