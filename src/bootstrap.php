@@ -18,15 +18,15 @@ return [
 
     'service'  => __DIR__ . '/../config/service.php',
 
-    'listener'  => __DIR__ . '/../config/listener.php',
+    'listener'  => __DIR__ . '/../config/listener.php', // 请求链路中通用事件监听
 
     'database'  => __DIR__ . '//../config/database.php',
 
     'cache'     => __DIR__ . '/../config/cache.php',
 
-    'swoole'    => __DIR__ . '/../config/swoole.php',
+    'swoole'    => __DIR__ . '/../config/swoole.php', // 服务配置中的 Listener 代表服务进程中的事件监听
 
     'command'  => __DIR__ . '/../config/command.php',
 
-    'process' => __DIR__ . '/../config/process.php',
+    'process' => __DIR__ . '/../config/process.php', // 进程管理配置中的 Listener 代表进程中的事件监听
 ];

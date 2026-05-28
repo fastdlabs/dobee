@@ -6,7 +6,7 @@ namespace process;
 
 use FastD\Swoole\Process\Worker;
 
-class WelcomeProcess extends Worker
+class WelcomeWorker extends Worker
 {
     public function process(Worker $worker): void
     {

@@ -22,7 +22,7 @@
      ],
      // 中间件所需缓存
      'xmCache' => [
-         'enable' => false,
+         'enable' => true,
          'adapter' => [
              'class' => \Symfony\Component\Cache\Adapter\FilesystemAdapter::class,
          ],

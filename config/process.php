@@ -1,5 +1,11 @@
 <?php
 
 return [
-    'welcome' => \terminal\process\WelcomeProcess::class,
+    'worker' => [
+        'welcome' => \process\WelcomeWorker::class
+    ],
+    // swoole 进程管理事件监听
+    'listener' => [
+        \process\listener\SignalListener::class
+    ],
 ];

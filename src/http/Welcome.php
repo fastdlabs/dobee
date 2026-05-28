@@ -55,6 +55,6 @@ class Welcome implements MiddlewareInterface
             $dbStatus .= '✗ Error: ' . $e->getMessage();
         }
         
-        return text("FastD Health Check\n" . $cacheStatus . "\n" . $dbStatus);
+        return text("FastD Health Check\n\n" . $cacheStatus . "\n" . $dbStatus);
     }
 }
