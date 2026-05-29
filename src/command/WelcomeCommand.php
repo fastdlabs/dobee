@@ -17,8 +17,7 @@ class WelcomeCommand extends Command
 
     public function execute(InputInterface $input, OutputInterface $output): int
     {
-        $env = config()->parsed->get('app.env', 'production');
-        $output->writeln("Hello FastD [{$env}]");
+        $output->writeln('Hello FastD [' . app()->getRuntime() . ']');
         
         return 0;
     }

@@ -10,7 +10,6 @@ class WelcomeWorker extends Worker
 {
     public function process(Worker $worker): void
     {
-        $env = config()->parsed->get('app.env', 'production');
-        echo "Hello FastD [{$env}]\n";
+        echo 'Hello FastD [' . app()->getRuntime() . "]\n";
     }
 }
