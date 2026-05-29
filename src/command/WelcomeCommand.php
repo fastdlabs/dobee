@@ -17,7 +17,7 @@ class WelcomeCommand extends Command
 
     public function execute(InputInterface $input, OutputInterface $output): int
     {
-        $output->writeln('Hello FastD [' . container()->getRuntime() . ']');
+        $output->writeln('Hello FastD and goodbye FastD [' . container()->getRuntime() . ']');
         
         return 0;
     }

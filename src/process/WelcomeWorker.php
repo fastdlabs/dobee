@@ -10,6 +10,6 @@ class WelcomeWorker extends Worker
 {
     public function process(Worker $worker): void
     {
-        echo 'Hello FastD [' . container()->getRuntime() . "]\n";
+        echo 'Hello FastD and goodbye FastD [' . container()->getRuntime() . "]\n";
     }
 }
