@@ -14,6 +14,7 @@ class Welcome implements MiddlewareInterface
 {
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {
-        return text('Hello FastD');
+        $env = config()->parsed->get('app.env', 'production');
+        return text("Hello FastD [{$env}]");
     }
 }
