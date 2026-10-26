@@ -2,7 +2,5 @@ parameters:
     level: 5
     paths:
         - src
-    reportUnmatchedIgnoredErrors: false
-    ignoreErrors:
-        - '#unknown class Symfony#'
-        - '#::setName\(\)#'
+    scanDirectories:
+        - vendor/symfony/console
