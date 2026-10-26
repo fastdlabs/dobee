@@ -89,7 +89,6 @@ dobee/
 ├── web/
 │   ├── index.php            # Web 入口
 │   └── demo/                # 静态演示页面（非应用代码）
-├── deploy/                  # Nginx / Logstash 部署示例
 ├── runtime/                 # 运行时目录（gitignored）
 └── composer.json
 ```
@@ -259,7 +258,7 @@ curl -N -X POST -d 'prompt=介绍一下 FastD' http://127.0.0.1:8099/ai/mock-str
 
 - 事件格式为 `event:` / `id:` / `data:` 帧，`data` 自动 JSON 编码，心跳为注释帧（浏览器不可见）。
 - Swoole 必须在 `config/swoole.php` 中保持 `enable_coroutine=true`、`http_compression=false`（仓库已默认配置）。
-- 反向代理需关闭缓冲：见 `deploy/nginx-fpm.conf`、`deploy/nginx-swoole.conf`。
+- 反向代理需关闭缓冲：配置见「运行方式 → Nginx 部署」。
 - `/ai/mock-stream` 为本地模拟输出，接入真实 AI 时替换生产者即可（上游流式客户端见后续计划）。
 
 ## 🛠️ 运行方式
@@ -286,6 +285,60 @@ php bin/server stop
 # 重启服务器
 php bin/server restart
 ```
+
+### Nginx 部署
+
+#### FastCGI / FPM
+
+```nginx
+server {
+    listen    80;
+    index index.php;
+    server_name fastd;
+    root /path/to/dobee/web;
+
+    location / {
+        try_files $uri $uri/ /index.php$is_args$args;
+    }
+
+    location ~ \.php {
+        fastcgi_pass 127.0.0.1:9000;
+
+        # SSE：关闭 FastCGI 缓冲并延长超时，保证事件实时下发
+        fastcgi_buffering off;
+        fastcgi_read_timeout 3600s;
+        gzip off;
+
+        fastcgi_split_path_info ^(.+\.php)(/.*)$;
+        include       fastcgi_params;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+    }
+}
+```
+
+#### Swoole 反向代理
+
+```nginx
+server {
+    listen     80;
+    server_name fastd;
+
+    location / {
+        proxy_pass http://127.0.0.1:9527;
+
+        # SSE：HTTP/1.1 + 关闭代理缓冲/缓存 + 延长读超时
+        proxy_http_version 1.1;
+        proxy_set_header Connection '';
+        proxy_buffering off;
+        proxy_cache off;
+        proxy_read_timeout 3600s;
+        gzip off;
+        chunked_transfer_encoding on;
+    }
+}
+```
+
+> SSE 场景必须关闭对应中间层的缓冲与压缩，并按需延长读超时；Swoole 服务本身保持 `config/swoole.php` 中 `enable_coroutine=true`、`http_compression=false`。
 
 ## 📝 使用示例
 
