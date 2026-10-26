@@ -160,6 +160,42 @@ class UserController implements MiddlewareInterface
 }
 ```
 
+### 6. 会话管理
+
+会话能力由 `config/session.php` 与 `FastD\ServiceProvider\SessionServiceProvider` 提供，
+默认在 `config/service.php` 中启用；CGI 使用文件存储，Swoole 使用共享内存 `Swoole\Table`。
+
+```php
+// config/session.php
+return [
+    'enabled' => true,
+    'handler' => 'auto',        // auto | file | swoole_table
+    'ttl'     => 1440,
+    'cookie'  => ['name' => 'FASTD_SESSID', 'http_only' => true, 'same_site' => 'Lax', 'secure' => false],
+    'file'    => ['path' => __DIR__ . '/../runtime/session'],
+];
+```
+
+```php
+// src/http/SessionDemo.php —— 通过请求属性取会话
+use FastD\Http\Session\SessionMiddleware;
+
+public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
+{
+    /** @var \FastD\Http\Session\SessionInterface $session */
+    $session = $request->getAttribute(SessionMiddleware::ATTRIBUTE);
+
+    $session->set('user_id', 1);          // 写入
+    $session->flash('notice', '保存成功');  // 仅下一次请求可读
+    $session->getToken();                 // CSRF token
+    $session->regenerateId();             // 登录后轮换会话 ID
+
+    return json(['ok' => true]);
+}
+```
+
+示例路由：`GET /session`（同一会话内访问计数递增），可直接 curl 验证 Cookie 回传。
+
 ## 🛠️ 运行方式
 
 ### 开发环境 (FastCGI)

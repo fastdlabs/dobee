@@ -25,11 +25,11 @@
         "fastd/container": "^8.0",
         "fastd/config": "^8.0",
         "fastd/middleware": "^8.0",
-        "fastd/http": "^8.0",
+        "fastd/http": "^8.1",
         "fastd/routing": "^8.0",
         "fastd/medoodb": "^8.0",
-        "fastd/swoole": "^8.0",
-        "fastd/fastd": "^8.0"
+        "fastd/swoole": "^8.1",
+        "fastd/fastd": "^8.1"
     },
     "require-dev": {
         "phpunit/phpunit": "^10.0",

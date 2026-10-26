@@ -24,6 +24,8 @@ return [
 
     'cache'     => __DIR__ . '/../config/cache.php',
 
+    'session'   => __DIR__ . '/../config/session.php', // 会话配置（由 SessionServiceProvider 读取）
+
     'swoole'    => __DIR__ . '/../config/swoole.php', // 服务配置中的 Listener 代表服务进程中的事件监听
 
     'command'  => __DIR__ . '/../config/command.php',
