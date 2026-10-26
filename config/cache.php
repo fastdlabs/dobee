@@ -22,7 +22,10 @@
      ],
      // 中间件所需缓存
      'xmCache' => [
-         'enable' => true,
+         // 演示默认关闭：缓存中间件会缓存 /session 等有状态 GET 响应，
+         // 且当前已发布的 fastd/cache 8.0.0 不具备 SSE 流式响应透传。
+         // 需要缓存时请确认路由无状态后再开启。
+         'enable' => false,
          'adapter' => [
              'class' => \Symfony\Component\Cache\Adapter\FilesystemAdapter::class,
          ],
