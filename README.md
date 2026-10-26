@@ -196,6 +196,42 @@ public function process(ServerRequestInterface $request, RequestHandlerInterface
 
 示例路由：`GET /session`（同一会话内访问计数递增），可直接 curl 验证 Cookie 回传。
 
+### 7. SSE 流式输出（AI 交互 Demo）
+
+框架提供 `FastD\Http\Response\SseResponse`（`sse()` 助手）与双运行时输出：CGI 直接 flush，Swoole 走协程 + 心跳 + 背压。仓库内置两个可直接体验的页面：
+
+| 地址 | 说明 |
+|------|------|
+| `/demo/sse` | EventSource 演示：逐条事件、序号、Last-Event-ID 续传、断开/重连 |
+| `/demo/ai` | AI 对话演示：POST + fetch 流式读取，逐 token 渲染，支持停止生成 |
+| `/sse?limit=5&interval=500` | 演示端点（GET，支持 `Last-Event-ID`） |
+| `/ai/mock-stream` | 模拟 AI 流式端点（POST 表单 `prompt`，返回 meta/delta/done） |
+
+启动（两种运行时任选其一）：
+
+```bash
+# CGI：浏览器打开 http://127.0.0.1:8099/demo/sse 与 /demo/ai
+php -S 127.0.0.1:8099 -t web
+
+# Swoole：浏览器打开 http://127.0.0.1:9527/demo/sse 与 /demo/ai
+php server start
+```
+
+终端验证：
+
+```bash
+curl -N 'http://127.0.0.1:8099/sse?limit=3&interval=500'
+curl -N -H 'Last-Event-ID: 2' 'http://127.0.0.1:8099/sse?limit=2'
+curl -N -X POST -d 'prompt=介绍一下 FastD' http://127.0.0.1:8099/ai/mock-stream
+```
+
+说明：
+
+- 事件格式为 `event:` / `id:` / `data:` 帧，`data` 自动 JSON 编码，心跳为注释帧（浏览器不可见）。
+- Swoole 必须在 `config/swoole.php` 中保持 `enable_coroutine=true`、`http_compression=false`（仓库已默认配置）。
+- 反向代理需关闭缓冲：见 `nginx-fpm-example.conf`、`nginx-swoole-example.conf`。
+- `/ai/mock-stream` 为本地模拟输出，接入真实 AI 时替换生产者即可（上游流式客户端见后续计划）。
+
 ## 🛠️ 运行方式
 
 ### 开发环境 (FastCGI)
