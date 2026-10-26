@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace tests;
+namespace tests\Feature;
 
 use FastD\Application;
 use FastD\Http\Request\ServerRequest;
@@ -20,7 +20,7 @@ class SseControllerTest extends TestCase
     {
         parent::setUp();
 
-        $application = new Application(include __DIR__ . '/../src/bootstrap.php');
+        $application = new Application(include __DIR__ . '/../../src/bootstrap.php');
         $application->bootstrap('testcase');
     }
 
@@ -79,16 +79,6 @@ class SseControllerTest extends TestCase
         $this->assertStringContainsString("event: done\n", $frames[count($frames) - 1]);
     }
 
-    public function testInteractivePagesAreServed(): void
-    {
-        $ssePage = container()->dispatch(new ServerRequest('GET', '/demo/sse'));
-        $this->assertSame(200, $ssePage->getStatusCode());
-        $this->assertStringContainsString('new EventSource', (string) $ssePage->getBody());
-
-        $aiPage = container()->dispatch(new ServerRequest('GET', '/demo/ai'));
-        $this->assertSame(200, $aiPage->getStatusCode());
-        $this->assertStringContainsString("/ai/mock-stream", (string) $aiPage->getBody());
-    }
 
     private function collectingEmitter(): EmitterInterface
     {

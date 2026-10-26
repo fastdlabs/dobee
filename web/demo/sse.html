@@ -1,28 +1,3 @@
-<?php
-
-declare(strict_types=1);
-
-namespace http;
-
-use FastD\Http\Response\Text;
-use Psr\Http\Message\ResponseInterface;
-use Psr\Http\Message\ServerRequestInterface;
-use Psr\Http\Server\MiddlewareInterface;
-use Psr\Http\Server\RequestHandlerInterface;
-
-/**
- * SSE 交互演示页（浏览器 EventSource）。
- */
-final class SseDemoPage implements MiddlewareInterface
-{
-    public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
-    {
-        return new Text(200, self::html(), ['content-type' => 'text/html; charset=UTF-8']);
-    }
-
-    private static function html(): string
-    {
-        return <<<'HTML'
 <!doctype html>
 <html lang="zh-CN">
 <head>
@@ -177,6 +152,3 @@ final class SseDemoPage implements MiddlewareInterface
 </script>
 </body>
 </html>
-HTML;
-    }
-}

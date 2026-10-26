@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace tests;
+namespace tests\Integration;
 
 use FastD\Application;
 use FastD\Cache\Listener\BootedEventListener as CacheBootedEventListener;

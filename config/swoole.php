@@ -5,7 +5,7 @@ return [
         [
             'host' => '127.0.0.1',
             'port' => 9527,
-            'worker' => \server\listener\SwRequestListener::class,
+            'worker' => \Listener\Server\SwRequestListener::class,
         ],
         [
             'host' => '127.0.0.1',

@@ -14,7 +14,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "": "src"
+            "": "src/"
         }
     },
     "require": {
@@ -29,5 +29,10 @@
     },
     "config": {
         "bin-dir": "bin"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "tests\\": "tests/"
+        }
     }
 }

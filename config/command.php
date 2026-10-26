@@ -1,5 +1,5 @@
 <?php
 
 return [
-    \command\WelcomeCommand::class,
+    \Terminal\Command\WelcomeCommand::class,
 ];

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace tests;
+namespace tests\Feature;
 
 use FastD\Testing\TestCase;
 
