@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace server\listener;
+namespace Listener\Server;
 
 use FastD\Swoole\Listener\Server\RequestListener;
 use Psr\Http\Message\ResponseInterface;

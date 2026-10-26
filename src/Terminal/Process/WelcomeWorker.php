@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace process;
+namespace Terminal\Process;
 
 use FastD\Swoole\Process\Worker;
 

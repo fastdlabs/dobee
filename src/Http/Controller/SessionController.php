@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace http;
+namespace Http\Controller;
 
 use FastD\Http\Session\SessionMiddleware;
 use Psr\Http\Message\ResponseInterface;
@@ -13,7 +13,7 @@ use Psr\Http\Server\RequestHandlerInterface;
 /**
  * 会话示例：同一会话内累加访问次数，并演示 flash 与 CSRF token。
  */
-final class SessionDemo implements MiddlewareInterface
+final class SessionController implements MiddlewareInterface
 {
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {

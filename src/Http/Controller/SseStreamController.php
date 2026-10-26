@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace http;
+namespace Http\Controller;
 
 use FastD\Http\Response\SseResponse;
 use FastD\Http\Sse\EmitterInterface;
@@ -15,9 +15,9 @@ use Psr\Http\Server\RequestHandlerInterface;
 /**
  * SSE 演示端点：按秒推送 tick 事件，支持 Last-Event-ID 续传。
  *
- * 浏览器：/demo/sse 页面；终端：curl -N 'http://127.0.0.1:8099/sse?limit=5'。
+ * 浏览器：/demo/sse.html 页面；终端：curl -N 'http://127.0.0.1:8099/sse?limit=5'。
  */
-final class SseStream implements MiddlewareInterface
+final class SseStreamController implements MiddlewareInterface
 {
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {

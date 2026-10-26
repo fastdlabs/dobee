@@ -58,26 +58,40 @@ composer require fastd/dobee
 ### 1. 项目结构
 
 ```
-myapp/
-├── config/              # 配置文件
-│   ├── cache.php       # 缓存配置
-│   ├── command.php     # 命令配置
-│   ├── database.php    # 数据库配置
-│   ├── listener.php    # 监听器配置
-│   ├── process.php     # 进程配置
-│   ├── route.php       # 路由配置
-│   ├── service.php     # 服务配置
-│   └── swoole.php      # Swoole 配置
-├── src/                # 应用代码
-│   ├── bootstrap.php   # 引导文件
-│   ├── command/        # 控制台命令
-│   ├── http/           # HTTP 处理器
-│   ├── listener/       # 事件监听器
-│   ├── process/        # 自定义进程
-│   └── server/         # 服务器监听器
-├── tests/              # 测试文件
-└── web/                # Web 入口
-    └── index.php
+dobee/
+├── config/                  # 运行时配置
+│   ├── cache.php
+│   ├── command.php
+│   ├── database.php
+│   ├── listener.php
+│   ├── process.php
+│   ├── service.php
+│   ├── session.php
+│   └── swoole.php
+├── routes/
+│   └── api.php              # API 路由
+├── src/                     # 应用代码（根命名空间映射到 src/）
+│   ├── bootstrap.php        # 引导文件（FastD bin 固定读取）
+│   ├── Http/
+│   │   ├── Controller/      # API Controller
+│   │   └── Middleware/      # API 中间件（预留）
+│   ├── Terminal/
+│   │   ├── Command/         # 控制台命令
+│   │   └── Process/         # 自定义进程 Worker
+│   └── Listener/
+│       ├── RuntimeListener.php
+│       ├── Server/          # Swoole Server 监听器
+│       └── Process/         # Swoole Process 监听器
+├── tests/
+│   ├── Feature/             # HTTP API 端到端测试
+│   ├── Integration/         # 应用启动/事件集成测试
+│   └── Unit/
+├── web/
+│   ├── index.php            # Web 入口
+│   └── demo/                # 静态演示页面（非应用代码）
+├── deploy/                  # Nginx / Logstash 部署示例
+├── runtime/                 # 运行时目录（gitignored）
+└── composer.json
 ```
 
 ### 2. 配置数据库
@@ -118,26 +132,26 @@ return [
 
 ### 4. 定义路由
 
-编辑 `config/route.php`:
+编辑 `routes/api.php`:
 
 ```php
 return [
-    ['GET', '/', \http\Welcome::class],
-    ['GET', '/users', \http\UserController::class . '@index'],
-    ['POST', '/users', \http\UserController::class . '@store'],
+    ['GET', '/', \Http\Controller\WelcomeController::class],
+    ['GET', '/users', \Http\Controller\UserController::class],
+    ['POST', '/users', \Http\Controller\UserController::class],
 ];
 ```
 
 ### 5. 创建 HTTP 处理器
 
-创建 `src/http/UserController.php`:
+创建 `src/Http/Controller/UserController.php`:
 
 ```php
 <?php
 
 declare(strict_types=1);
 
-namespace http;
+namespace Http\Controller;
 
 use FastD\Http\Response\Json;
 use Psr\Http\Message\ResponseInterface;
@@ -177,7 +191,7 @@ return [
 ```
 
 ```php
-// src/http/SessionDemo.php —— 通过请求属性取会话
+// src/Http/Controller/SessionController.php —— 通过请求属性取会话
 use FastD\Http\Session\SessionMiddleware;
 
 public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
@@ -202,18 +216,18 @@ public function process(ServerRequestInterface $request, RequestHandlerInterface
 
 | 地址 | 说明 |
 |------|------|
-| `/demo/sse` | EventSource 演示：逐条事件、序号、Last-Event-ID 续传、断开/重连 |
-| `/demo/ai` | AI 对话演示：POST + fetch 流式读取，逐 token 渲染，支持停止生成 |
+| `/demo/sse.html` | EventSource 演示：逐条事件、序号、Last-Event-ID 续传、断开/重连 |
+| `/demo/ai.html` | AI 对话演示：POST + fetch 流式读取，逐 token 渲染，支持停止生成 |
 | `/sse?limit=5&interval=500` | 演示端点（GET，支持 `Last-Event-ID`） |
 | `/ai/mock-stream` | 模拟 AI 流式端点（POST 表单 `prompt`，返回 meta/delta/done） |
 
 启动（两种运行时任选其一）：
 
 ```bash
-# CGI：浏览器打开 http://127.0.0.1:8099/demo/sse 与 /demo/ai
+# CGI：浏览器打开 http://127.0.0.1:8099/demo/sse.html 与 /demo/ai
 php -S 127.0.0.1:8099 -t web
 
-# Swoole：浏览器打开 http://127.0.0.1:9527/demo/sse 与 /demo/ai
+# Swoole 入口只提供 API；静态演示页请用 CGI 或独立静态服务器
 php server start
 ```
 
@@ -229,7 +243,7 @@ curl -N -X POST -d 'prompt=介绍一下 FastD' http://127.0.0.1:8099/ai/mock-str
 
 - 事件格式为 `event:` / `id:` / `data:` 帧，`data` 自动 JSON 编码，心跳为注释帧（浏览器不可见）。
 - Swoole 必须在 `config/swoole.php` 中保持 `enable_coroutine=true`、`http_compression=false`（仓库已默认配置）。
-- 反向代理需关闭缓冲：见 `nginx-fpm-example.conf`、`nginx-swoole-example.conf`。
+- 反向代理需关闭缓冲：见 `deploy/nginx-fpm.conf`、`deploy/nginx-swoole.conf`。
 - `/ai/mock-stream` 为本地模拟输出，接入真实 AI 时替换生产者即可（上游流式客户端见后续计划）。
 
 ## 🛠️ 运行方式
@@ -270,7 +284,7 @@ Cache: ✓ Connected
 Database: ✓ Connected
 ```
 
-查看 `src/http/Welcome.php` 了解完整实现。
+查看 `src/Http/Controller/WelcomeController.php` 了解完整实现。
 
 ### 使用缓存
 
@@ -315,14 +329,14 @@ $db->delete('users', ['id' => 1]);
 
 ### 命令行命令
 
-创建 `src/command/GreetCommand.php`:
+创建 `src/Terminal/Command/GreetCommand.php`:
 
 ```php
 <?php
 
 declare(strict_types=1);
 
-namespace command;
+namespace Terminal\Command;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
@@ -353,7 +367,7 @@ php bin/console greet
 
 ```bash
 composer install
-vendor/bin/phpunit
+bin/phpunit
 ```
 
 ## 📚 依赖组件
@@ -363,18 +377,12 @@ DoBee 基于 FastD 8.0 组件生态：
 ```json
 {
     "require": {
-        "fastd/cache": "^8.0",
-        "fastd/container": "^8.0",
-        "fastd/config": "^8.0",
-        "fastd/http": "^8.0",
-        "fastd/event": "^8.0",
-        "fastd/routing": "^8.0",
-        "fastd/medoodb": "^8.0",
-        "fastd/swoole": "^8.0",
-        "fastd/fastd": "^8.0"
+        "fastd/fastd": "^8.1"
     }
 }
 ```
+
+具体组件版本由 `fastd/fastd` 统一约束，dobee 不再单独维护组件版本矩阵。
 
 所有组件均遵循 PSR 标准，完全兼容 PHP 8.2+。
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace http;
+namespace Http\Controller;
 
 use FastD\Http\Response\SseResponse;
 use FastD\Http\Sse\EmitterInterface;
@@ -17,9 +17,9 @@ use Psr\Http\Server\RequestHandlerInterface;
  * 模拟 AI 流式输出（无需真实模型/密钥）。
  *
  * POST /ai/mock-stream，表单字段 prompt；返回 meta / delta / done 事件，
- * 前端可用 fetch + ReadableStream 逐 token 渲染（见 /demo/ai）。
+ * 前端可用 fetch + ReadableStream 逐 token 渲染（见 /demo/ai.html）。
  */
-final class AiMockStream implements MiddlewareInterface
+final class AiMockStreamController implements MiddlewareInterface
 {
     /**
      * 本地模拟的固定回答（逐字符输出）。

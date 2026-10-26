@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace listener;
+namespace Listener;
 
 use FastD\Event\BootedEvent;
 use FastD\Event\EventListener;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace command;
+namespace Terminal\Command;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;

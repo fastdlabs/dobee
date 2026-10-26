@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace process\listener;
+namespace Listener\Process;
 
 use FastD\Swoole\Listener\Process\SignalEventListener;
 

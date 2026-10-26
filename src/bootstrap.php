@@ -1,6 +1,6 @@
 <?php
 
-// 应用引导文件，添加改文件的配置可以在 service register 的时候通过 Application::config 进行加载，否则只能通过 config() 手动加载
+// 应用引导文件，添加该文件的配置可以在 service register 的时候通过 Application::config 进行加载，否则只能通过 config() 手动加载
 // config()->parse('路径')->get('文件名');
 return [
     'name' => 'fastd8',
@@ -14,13 +14,13 @@ return [
         'level' => \Monolog\Level::Debug,
     ],
 
-    'route'    => __DIR__ . '/../config/route.php',
+    'route'    => __DIR__ . '/../routes/api.php',
 
     'service'  => __DIR__ . '/../config/service.php',
 
     'listener'  => __DIR__ . '/../config/listener.php', // 请求链路中通用事件监听
 
-    'database'  => __DIR__ . '//../config/database.php',
+    'database'  => __DIR__ . '/../config/database.php',
 
     'cache'     => __DIR__ . '/../config/cache.php',
 
