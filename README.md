@@ -174,6 +174,20 @@ class UserController implements MiddlewareInterface
 }
 ```
 
+### 5.1 HTTP 中间件
+
+路由第 4 个参数可传入中间件类列表，按路由独立生效：
+
+```php
+// routes/api.php
+['GET', '/middleware-demo', \Http\Controller\MiddlewareDemoController::class, [
+    \Http\Middleware\RequestIdMiddleware::class,
+]],
+```
+
+`RequestIdMiddleware` 会透传或生成 `X-Request-Id`，并在响应中附加 `X-Response-Time`；
+对应联调页面：`/demo/middleware.html`，API：`/middleware-demo`。
+
 ### 6. 会话管理
 
 会话能力由 `config/session.php` 与 `FastD\ServiceProvider\SessionServiceProvider` 提供，
@@ -218,8 +232,10 @@ public function process(ServerRequestInterface $request, RequestHandlerInterface
 |------|------|
 | `/demo/sse.html` | EventSource 演示：逐条事件、序号、Last-Event-ID 续传、断开/重连 |
 | `/demo/ai.html` | AI 对话演示：POST + fetch 流式读取，逐 token 渲染，支持停止生成 |
+| `/demo/middleware.html` | 中间件演示：展示 `X-Request-Id`、`X-Response-Time` 与响应 JSON |
 | `/sse?limit=5&interval=500` | 演示端点（GET，支持 `Last-Event-ID`） |
 | `/ai/mock-stream` | 模拟 AI 流式端点（POST 表单 `prompt`，返回 meta/delta/done） |
+| `/middleware-demo` | 路由级 `RequestIdMiddleware` 演示端点 |
 
 启动（两种运行时任选其一）：
 
