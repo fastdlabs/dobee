@@ -25,7 +25,7 @@ jobs:
       - name: Install dependencies
         run: composer update --prefer-dist --no-progress --no-interaction
       - name: PHPStan
-        run: bin/phpstan analyse --no-progress --memory-limit=1G
+        run: bin/phpstan analyse --no-progress --memory-limit=1G --autoload-file=vendor/autoload.php
       - name: Run tests with coverage
         run: |
           mkdir -p build
