@@ -7,7 +7,7 @@ return [
 
     'root' => __DIR__ . '/..',
 
-    'timezone' => 'PRC',
+    'timezone' => 'Asia/Shanghai',
 
     'log' => [
         'path' => __DIR__ . '/../runtime/logs',

@@ -41,7 +41,7 @@ class BootedEventListenerTest extends TestCase
         $app = new Application([
             'name' => 'fastd8',
             'root' => dirname(__DIR__),
-            'timezone' => 'PRC',
+            'timezone' => 'Asia/Shanghai',
             'runtime' => 'swoole',
         ]);
         $app->add('cache', $cache);
