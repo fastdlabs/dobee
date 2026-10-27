@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ae273c6cae447a9b2abd5dcc5e8a072d",
+    "content-hash": "ba2124015a3ba4d2beb69ccb2d3fcb35",
     "packages": [
         {
             "name": "catfan/medoo",
@@ -2402,16 +2402,16 @@
     "packages-dev": [
         {
             "name": "fastd/dobee-demo",
-            "version": "v1.4.1",
+            "version": "v1.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fastdlabs/dobee-demo.git",
-                "reference": "3e0eac33f8ba030ba81e4df8f3e97765dcd65155"
+                "reference": "3761f1a51f0d3875ed3d6d0a123c2ef14b7c5719"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fastdlabs/dobee-demo/zipball/3e0eac33f8ba030ba81e4df8f3e97765dcd65155",
-                "reference": "3e0eac33f8ba030ba81e4df8f3e97765dcd65155",
+                "url": "https://api.github.com/repos/fastdlabs/dobee-demo/zipball/3761f1a51f0d3875ed3d6d0a123c2ef14b7c5719",
+                "reference": "3761f1a51f0d3875ed3d6d0a123c2ef14b7c5719",
                 "shasum": ""
             },
             "require": {
@@ -2428,7 +2428,7 @@
             "require-dev": {
                 "phpstan/phpstan": "^2.3",
                 "phpunit/phpunit": "^13.4",
-                "swoole/ide-helper": "@dev"
+                "swoole/ide-helper": "^6.0"
             },
             "suggest": {
                 "ext-pdo_sqlite": "Required for the SQLite database demo",
@@ -2440,7 +2440,11 @@
                     "FastD\\Demo\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "FastD\\Demo\\Tests\\": "tests/"
+                }
+            },
             "license": [
                 "MIT"
             ],
@@ -2456,10 +2460,10 @@
                 "demo"
             ],
             "support": {
-                "issues": "https://github.com/fastdlabs/dobee-demo/issues",
-                "source": "https://github.com/fastdlabs/dobee-demo/tree/v1.4.1"
+                "source": "https://github.com/fastdlabs/dobee-demo/tree/v1.4.3",
+                "issues": "https://github.com/fastdlabs/dobee-demo/issues"
             },
-            "time": "2026-10-27T10:40:08+00:00"
+            "time": "2026-10-27T15:40:22+00:00"
         },
         {
             "name": "myclabs/deep-copy",
