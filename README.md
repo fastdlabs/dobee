@@ -73,8 +73,10 @@ dobee/
 ├── src/                     # 应用代码（根命名空间映射到 src/）
 │   ├── bootstrap.php        # 引导文件（FastD bin 固定读取）
 │   ├── Http/
-│   │   ├── Controller/      # API Controller
-│   │   └── Middleware/      # API 中间件（预留）
+│   │   ├── Controller/      # API Controller（支持构造器注入）
+│   │   ├── Middleware/      # API 中间件
+│   │   └── Support/         # Demo 服务
+│   └── ServiceProvider/     # 应用服务提供者
 │   ├── Terminal/
 │   │   ├── Command/         # 控制台命令
 │   │   └── Process/         # 自定义进程 Worker
@@ -232,9 +234,11 @@ public function process(ServerRequestInterface $request, RequestHandlerInterface
 | `/demo/sse.html` | EventSource 演示：逐条事件、序号、Last-Event-ID 续传、断开/重连 |
 | `/demo/ai.html` | AI 对话演示：POST + fetch 流式读取，逐 token 渲染，支持停止生成 |
 | `/demo/middleware.html` | 中间件演示：展示 `X-Request-Id`、`X-Response-Time` 与响应 JSON |
+| `/demo/di.html` | 构造器注入 / Resolver 演示：Controller 与 Middleware 的依赖注入 |
 | `/sse?limit=5&interval=500` | 演示端点（GET，支持 `Last-Event-ID`） |
 | `/ai/mock-stream` | 模拟 AI 流式端点（POST 表单 `prompt`，返回 meta/delta/done） |
 | `/middleware-demo` | 路由级 `RequestIdMiddleware` 演示端点 |
+| `/di-demo` | 构造器注入 Controller + Middleware 演示端点 |
 
 启动（两种运行时任选其一）：
 

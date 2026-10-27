@@ -5,6 +5,9 @@ return [
     ['GET', '/', \Http\Controller\WelcomeController::class],
     ['GET', '/session', \Http\Controller\SessionController::class],
 
+    // 构造器注入 Demo：Container::make + routing resolver
+    ['GET', '/di-demo', \Http\Controller\InjectionDemoController::class, [\Http\Middleware\InjectionDemoMiddleware::class]],
+
     // Middleware 演示（路由级 RequestIdMiddleware）
     ['GET', '/middleware-demo', \Http\Controller\MiddlewareDemoController::class, [\Http\Middleware\RequestIdMiddleware::class]],
 
