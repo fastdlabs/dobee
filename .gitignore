@@ -3,7 +3,6 @@ composer.phar
 /.idea
 /bin
 /runtime
-composer.lock
 .env.yml
 ./.phpunit.result.cache
 
