@@ -1,6 +1,6 @@
 # DoBee Framework
 
-[![Build Status](https://travis-ci.org/fastdlabs/dobee.svg?branch=master)](https://travis-ci.org/fastdlabs/dobee)
+[![CI](https://github.com/fastdlabs/dobee/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/fastdlabs/dobee/actions/workflows/ci.yml)
 [![PHP Version](https://img.shields.io/badge/php-%3E%3D8.2-8892BF.svg)](https://secure.php.net/)
 [![Swoole Version](https://img.shields.io/badge/swoole-%3E%3E4.5-8892BF.svg)](http://www.swoole.com/)
 [![Latest Stable Version](https://poser.pugx.org/fastd/dobee/v/stable)](https://packagist.org/packages/fastd/dobee)
