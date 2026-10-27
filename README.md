@@ -12,6 +12,7 @@ DoBee 是基于 FastD 组件生态构建的最小 PHP API 框架骨架，支持 
 - 最小可运行骨架：安装后只有欢迎接口
 - PSR-7 / PSR-15 / PSR-17 标准
 - Swoole HTTP Server 与 FastCGI 双运行时
+- 默认包含 Cache / MedooDB 组件
 - 可选 Demo 包：`fastd/dobee-demo`
 - 构造器注入 / 路由 resolver 由 FastD 核心提供
 
@@ -19,7 +20,7 @@ DoBee 是基于 FastD 组件生态构建的最小 PHP API 框架骨架，支持 
 
 - PHP >= 8.4.1
 - ext-json
-- ext-pdo（数据库/Demo 需要）
+- ext-pdo（MedooDB 依赖）
 - ext-swoole >= 6.0
 
 ## 安装
