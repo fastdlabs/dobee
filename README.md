@@ -19,7 +19,7 @@ DoBee 是基于 FastD 组件生态构建的最小 PHP API 框架骨架，支持 
 
 - PHP >= 8.4.1
 - ext-json
-- ext-pdo
+- ext-pdo（数据库/Demo 需要）
 - ext-swoole >= 6.0
 
 ## 安装
