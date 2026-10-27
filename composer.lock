@@ -282,16 +282,16 @@
         },
         {
             "name": "fastd/fastd",
-            "version": "v8.3.0",
+            "version": "v8.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fastdlabs/fastD.git",
-                "reference": "01c0aeb40ef7b386e95cc34d37cf84249a150f8c"
+                "reference": "5d1bc48c01c7dfc6c71614b899a80875092d4529"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fastdlabs/fastD/zipball/01c0aeb40ef7b386e95cc34d37cf84249a150f8c",
-                "reference": "01c0aeb40ef7b386e95cc34d37cf84249a150f8c",
+                "url": "https://api.github.com/repos/fastdlabs/fastD/zipball/5d1bc48c01c7dfc6c71614b899a80875092d4529",
+                "reference": "5d1bc48c01c7dfc6c71614b899a80875092d4529",
                 "shasum": ""
             },
             "require": {
@@ -299,7 +299,7 @@
                 "fastd/config": "^8.0",
                 "fastd/container": "^8.1",
                 "fastd/event": "^8.0",
-                "fastd/http": "^8.1",
+                "fastd/http": "^8.2",
                 "fastd/middleware": "^8.0",
                 "fastd/routing": "^8.1",
                 "fastd/swoole": "^8.1",
@@ -311,7 +311,7 @@
             "require-dev": {
                 "phpstan/phpstan": "^2.3",
                 "phpunit/phpunit": "^13.4",
-                "swoole/ide-helper": "@dev"
+                "swoole/ide-helper": "^6.0"
             },
             "suggest": {
                 "ext-redis": "Required by FastD\\Http\\Session\\Handler\\RedisSessionHandler.",
@@ -359,22 +359,22 @@
             ],
             "support": {
                 "issues": "https://github.com/fastdlabs/fastD/issues",
-                "source": "https://github.com/fastdlabs/fastD/tree/v8.3.0"
+                "source": "https://github.com/fastdlabs/fastD/tree/v8.3.1"
             },
-            "time": "2026-10-27T10:47:38+00:00"
+            "time": "2026-10-27T11:14:41+00:00"
         },
         {
             "name": "fastd/http",
-            "version": "v8.2.0",
+            "version": "v8.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fastdlabs/http.git",
-                "reference": "e54f191839fa8e32f8bb0c1b926fc5e9ef426ca4"
+                "reference": "34884c22d6b83c28bfa50fd2b94f562ec674d051"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fastdlabs/http/zipball/e54f191839fa8e32f8bb0c1b926fc5e9ef426ca4",
-                "reference": "e54f191839fa8e32f8bb0c1b926fc5e9ef426ca4",
+                "url": "https://api.github.com/repos/fastdlabs/http/zipball/34884c22d6b83c28bfa50fd2b94f562ec674d051",
+                "reference": "34884c22d6b83c28bfa50fd2b94f562ec674d051",
                 "shasum": ""
             },
             "require": {
@@ -390,7 +390,7 @@
             "require-dev": {
                 "phpstan/phpstan": "^2.3",
                 "phpunit/phpunit": "^13.4",
-                "swoole/ide-helper": "@dev"
+                "swoole/ide-helper": "^6.0"
             },
             "suggest": {
                 "ext-redis": "Required to use RedisSessionHandler with ext-redis.",
@@ -422,9 +422,9 @@
             ],
             "support": {
                 "issues": "https://github.com/fastdlabs/http/issues",
-                "source": "https://github.com/fastdlabs/http/tree/v8.2.0"
+                "source": "https://github.com/fastdlabs/http/tree/v8.2.1"
             },
-            "time": "2026-10-27T10:47:49+00:00"
+            "time": "2026-10-27T11:14:47+00:00"
         },
         {
             "name": "fastd/medoodb",
@@ -582,16 +582,16 @@
         },
         {
             "name": "fastd/swoole",
-            "version": "v8.2.0",
+            "version": "v8.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fastdlabs/swoole.git",
-                "reference": "8718dd2305e12bbc291c9fd9dc629a1f13bc73a6"
+                "reference": "a85382c26f958aa5f22fc882917d232119d2bf55"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fastdlabs/swoole/zipball/8718dd2305e12bbc291c9fd9dc629a1f13bc73a6",
-                "reference": "8718dd2305e12bbc291c9fd9dc629a1f13bc73a6",
+                "url": "https://api.github.com/repos/fastdlabs/swoole/zipball/a85382c26f958aa5f22fc882917d232119d2bf55",
+                "reference": "a85382c26f958aa5f22fc882917d232119d2bf55",
                 "shasum": ""
             },
             "require": {
@@ -605,7 +605,7 @@
             "require-dev": {
                 "phpstan/phpstan": "^2.3",
                 "phpunit/phpunit": "^13.4",
-                "swoole/ide-helper": "@dev"
+                "swoole/ide-helper": "^6.0"
             },
             "type": "library",
             "autoload": {
@@ -626,9 +626,9 @@
             "description": "Swoole HTTP server, coroutine, IPC and client component for FastD, requiring Swoole >= 6.0.",
             "support": {
                 "issues": "https://github.com/fastdlabs/swoole/issues",
-                "source": "https://github.com/fastdlabs/swoole/tree/v8.2.0"
+                "source": "https://github.com/fastdlabs/swoole/tree/v8.2.1"
             },
-            "time": "2026-10-27T10:17:23+00:00"
+            "time": "2026-10-27T11:14:54+00:00"
         },
         {
             "name": "monolog/monolog",
