@@ -14,6 +14,6 @@ class WelcomeController implements MiddlewareInterface
 {
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {
-        return text('Hello FastD and goodbye FastD [' . container()->getRuntime() . ']');
+        return new Text(200, 'Hello FastD and goodbye FastD [' . container()->getRuntime() . ']');
     }
 }

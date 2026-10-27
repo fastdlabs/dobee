@@ -1,75 +1,57 @@
 <?php
 
-// Doc url: https://symfony.com/doc/current/components/cache.html
+// 缓存配置：由 FastD\Cache\ServiceProvider\CacheServiceProvider 读取。
+// 文档：https://symfony.com/doc/current/components/cache.html
+return [
+    // 普通文件缓存池（Demo 的 /cache-demo 使用此池）
+    'file' => [
+        'adapter' => [
+            'class' => \Symfony\Component\Cache\Adapter\FilesystemAdapter::class,
+        ],
+        'namespace' => '',
+        'lifetime' => 3600,
+        'directory' => __DIR__ . '/../runtime/cache/',
+    ],
 
- return [
-     // 文件类型缓存
-     'php' => [
-         'adapter' => [
-             'class' => \Symfony\Component\Cache\Adapter\PhpFilesAdapter::class,
-         ],
-         'namespace' => '',
-         'lifetime' => 3600,
-         'directory' => '',
-     ],
-     'file' => [
-         'adapter' => [
-             'class' => \Symfony\Component\Cache\Adapter\FilesystemAdapter::class,
-         ],
-         'namespace' => '',
-         'lifetime' => 3600,
-         'directory' => __DIR__ . '/../runtime/cache/',
-     ],
-     // 中间件所需缓存
-     'xmCache' => [
-         // 演示默认关闭：缓存中间件会缓存 /session 等有状态 GET 响应，
-         // 且当前已发布的 fastd/cache 8.0.0 不具备 SSE 流式响应透传。
-         // 需要缓存时请确认路由无状态后再开启。
-         'enable' => false,
-         'adapter' => [
-             'class' => \Symfony\Component\Cache\Adapter\FilesystemAdapter::class,
-         ],
-         'lifetime' => 60,
-         'directory' => __DIR__ . '/../runtime/cache/http/',
-         'cache_keys' => ['foo',], // 会根据设置的 keys 列表进行缓存 key 处理
-     ],
-     // 动态类型缓存
-     'redis' => [
-         // adapter 配置针对连接器进行的配置
-         'adapter' => [
-             'class' => \Symfony\Component\Cache\Adapter\RedisAdapter::class,
-             'dsn' => 'redis://%redis.pass%@%redis.host%:%redis.port%/%redis.db%',
-             'options' => [
-//                 'class' => null,
-//                 'persistent' => 0,
-//                 'persistent_id' => null,
-//                 'timeout' => 30,
-//                 'read_timeout' => 0,
-//                 'retry_interval' => 0,
-//                 'tcp_keepalive' => 0,
-//                 'lazy' => null,
-//                 'redis_cluster' => false,
-//                 'redis_sentinel' => null,
-//                 'dbindex' => 0,
-//                 'failover' => 'none',
-//                 'ssl' => null,
-             ],
-         ],
-         // 这是针对 adapter 的配置
-         'namespace' => '',
-         'lifetime' => 3600,
-         'marshaller' => null
-     ],
-     'memcache' => [
-         'adapter' => [
-             'class' => \Symfony\Component\Cache\Adapter\MemcachedAdapter::class,
-             'dsn' => 'memcached://%mem.host%:%mem.port%',
-             'options' => [
-                 'libketama_compatible' => true,
-                 'serializer' => 'igbinary',
-             ],
-         ],
-         'namespace' => '',
-         'lifetime' => 3600,
-     ],
- ];
+    // HTTP 缓存中间件配置（默认关闭，确认路由无状态后再开启）
+    'xmCache' => [
+        'enable' => false,
+        'adapter' => [
+            'class' => \Symfony\Component\Cache\Adapter\FilesystemAdapter::class,
+        ],
+        'lifetime' => 60,
+        'directory' => __DIR__ . '/../runtime/cache/http/',
+        'cache_keys' => ['foo'],
+    ],
+
+    // PHP 文件缓存示例
+    'php' => [
+        'adapter' => [
+            'class' => \Symfony\Component\Cache\Adapter\PhpFilesAdapter::class,
+        ],
+        'namespace' => '',
+        'lifetime' => 3600,
+        'directory' => __DIR__ . '/../runtime/cache/php/',
+    ],
+
+    // Redis 示例（需要 redis 扩展/服务，按需打开）
+    // 'redis' => [
+    //     'adapter' => [
+    //         'class' => \Symfony\Component\Cache\Adapter\RedisAdapter::class,
+    //         'dsn' => 'redis://%redis.pass%@%redis.host%:%redis.port%/%redis.db%',
+    //         'options' => [],
+    //     ],
+    //     'namespace' => '',
+    //     'lifetime' => 3600,
+    // ],
+
+    // Memcached 示例（需要 memcached 扩展/服务，按需打开）
+    // 'memcache' => [
+    //     'adapter' => [
+    //         'class' => \Symfony\Component\Cache\Adapter\MemcachedAdapter::class,
+    //         'dsn' => 'memcached://%mem.host%:%mem.port%',
+    //     ],
+    //     'namespace' => '',
+    //     'lifetime' => 3600,
+    // ],
+];

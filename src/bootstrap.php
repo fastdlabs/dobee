@@ -1,7 +1,6 @@
 <?php
 
-// 应用引导文件，添加该文件的配置可以在 service register 的时候通过 Application::config 进行加载，否则只能通过 config() 手动加载
-// config()->parse('路径')->get('文件名');
+// 应用引导文件：配置项按需保留，Demo 由 fastd/dobee-demo 可选提供。
 return [
     'name' => 'fastd8',
 
@@ -14,21 +13,16 @@ return [
         'level' => \Monolog\Level::Debug,
     ],
 
-    'route'    => __DIR__ . '/../routes/web.php',
+    'route' => __DIR__ . '/../routes/web.php',
 
-    'service'  => __DIR__ . '/../config/service.php',
+    'service' => __DIR__ . '/../config/service.php',
 
-    'listener'  => __DIR__ . '/../config/listener.php', // 请求链路中通用事件监听
+    'listener' => __DIR__ . '/../config/listener.php',
 
-    'database'  => __DIR__ . '/../config/database.php',
-
-    'cache'     => __DIR__ . '/../config/cache.php',
-
-    'session'   => __DIR__ . '/../config/session.php', // 会话配置（由 SessionServiceProvider 读取）
-
-    'swoole'    => __DIR__ . '/../config/swoole.php', // 服务配置中的 Listener 代表服务进程中的事件监听
-
-    'command'  => __DIR__ . '/../config/command.php',
-
-    'process' => __DIR__ . '/../config/process.php', // 进程管理配置中的 Listener 代表进程中的事件监听
+    'cache' => __DIR__ . '/../config/cache.php',
+    'database' => __DIR__ . '/../config/database.php',
+    'session' => __DIR__ . '/../config/session.php',
+    'command' => __DIR__ . '/../config/command.php',
+    'process' => __DIR__ . '/../config/process.php',
+    'swoole' => __DIR__ . '/../config/swoole.php',
 ];

@@ -1,11 +1,10 @@
 <?php
 
+// 自定义进程配置：php bin/process
+//
+// Demo 包安装后，DemoServiceProvider 会在注册时把 Worker / 信号监听写入
+// process 配置；Process 使用 new 实例化，宿主不需要在这里列类名。
 return [
-    'worker' => [
-        'welcome' => \Terminal\Process\WelcomeWorker::class
-    ],
-    // swoole 进程管理事件监听
-    'listener' => [
-        \Listener\Process\SignalListener::class
-    ],
+    'worker' => [],
+    'listener' => [],
 ];

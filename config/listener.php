@@ -1,6 +1,5 @@
 <?php
 
-// 请求中通用事件监听
-return [
-    \Listener\RuntimeListener::class,
-];
+// 应用通用事件监听器示例。
+// 例如：\Listener\RuntimeListener::class
+return [];

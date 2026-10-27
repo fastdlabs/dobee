@@ -1,10 +1,7 @@
 <?php
 
- return [
-     // 会话放在最前：push 到 matcher 后先于缓存等中间件执行
-     \FastD\ServiceProvider\SessionServiceProvider::class,
-     \FastD\MedooDB\ServiceProvider\DatabaseServiceProvider::class,
-     \FastD\Cache\ServiceProvider\CacheServiceProvider::class,
-     \FastD\Cache\ServiceProvider\ServerRequestCacheProvider::class,
-     \ServiceProvider\InjectionDemoServiceProvider::class,
- ];
+// 服务提供者配置。
+//
+// 默认保持为空；安装 fastd/dobee-demo 后，Composer 安装脚本会自动把
+// DemoServiceProvider 写入这里。
+return [];
