@@ -37,11 +37,5 @@
         "psr-4": {
             "tests\\": "tests/"
         }
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/fastdlabs/dobee-demo"
-        }
-    ]
+    }
 }
