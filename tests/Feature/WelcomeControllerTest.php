@@ -13,6 +13,6 @@ class WelcomeControllerTest extends TestCase
         $response = $this->handleRequest('GET', '/');
 
         $this->isSuccessful($response);
-        $this->equalsResponse($response, 'Hello FastD and goodbye FastD');
+        $this->equalsResponse($response, 'Hello FastD and goodbye FastD [testcase]');
     }
 }

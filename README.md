@@ -48,8 +48,10 @@ curl http://127.0.0.1:8099/
 响应：
 
 ```text
-Hello FastD and goodbye FastD
+Hello FastD and goodbye FastD [fastcgi]
 ```
+
+方括号中为当前执行环境（如 `fastcgi`、`swoole`、`testcase`），用于区分运行时。
 
 ## 项目结构
 
