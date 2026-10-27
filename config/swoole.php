@@ -8,11 +8,11 @@ return [
         'http' => [
             'host' => '127.0.0.1',
             'port' => 9527,
-            'handler' => \FastD\Listener\Server\SwHttpListener::class,
+            'listener' => \FastD\Listener\Server\SwHttpListener::class,
         ],
     ],
 
-    'events' => [
+    'listeners' => [
         \FastD\Swoole\Listener\Server\WorkerListener::class,
     ],
 
