@@ -1,0 +1,7 @@
+parameters:
+    level: 5
+    paths:
+        - src
+    excludePaths:
+        # Symfony Console 在 PHPStan 的 dobee 运行上下文中无法通过 vendor autoload 解析
+        - src/Terminal/Command
