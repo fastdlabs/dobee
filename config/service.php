@@ -1,10 +1,10 @@
 <?php
 
- return [
-     // 会话放在最前：push 到 matcher 后先于缓存等中间件执行
-     \FastD\ServiceProvider\SessionServiceProvider::class,
-     \FastD\MedooDB\ServiceProvider\DatabaseServiceProvider::class,
-     \FastD\Cache\ServiceProvider\CacheServiceProvider::class,
-     \FastD\Cache\ServiceProvider\ServerRequestCacheProvider::class,
-     \ServiceProvider\InjectionDemoServiceProvider::class,
- ];
+$providers = [];
+
+// Demo 包是可选依赖：生产环境 --no-dev 安装时自动跳过。
+if (class_exists(\FastD\Demo\DemoServiceProvider::class)) {
+    $providers[] = \FastD\Demo\DemoServiceProvider::class;
+}
+
+return $providers;

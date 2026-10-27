@@ -27,7 +27,8 @@
         "phpunit/phpunit": "^13.4",
         "symfony/console": "^8.0",
         "swoole/ide-helper": "@dev",
-        "phpstan/phpstan": "^2.3"
+        "phpstan/phpstan": "^2.3",
+        "fastd/dobee-demo": "^1.0"
     },
     "config": {
         "bin-dir": "bin"
@@ -36,5 +37,11 @@
         "psr-4": {
             "tests\\": "tests/"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/fastdlabs/dobee-demo"
+        }
+    ]
 }
