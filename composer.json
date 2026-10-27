@@ -47,11 +47,5 @@
         "post-update-cmd": [
             "@php -r \"is_file('vendor/fastd/dobee-demo/scripts/install.php') && require 'vendor/fastd/dobee-demo/scripts/install.php';\""
         ]
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/fastdlabs/dobee-demo.git"
-        }
-    ]
+    }
 }

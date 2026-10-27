@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ba2124015a3ba4d2beb69ccb2d3fcb35",
+    "content-hash": "25bcc49283f6cc4452bff912c05a454e",
     "packages": [
         {
             "name": "catfan/medoo",
@@ -2440,11 +2440,7 @@
                     "FastD\\Demo\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "FastD\\Demo\\Tests\\": "tests/"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2460,8 +2456,8 @@
                 "demo"
             ],
             "support": {
-                "source": "https://github.com/fastdlabs/dobee-demo/tree/v1.4.3",
-                "issues": "https://github.com/fastdlabs/dobee-demo/issues"
+                "issues": "https://github.com/fastdlabs/dobee-demo/issues",
+                "source": "https://github.com/fastdlabs/dobee-demo/tree/v1.4.3"
             },
             "time": "2026-10-27T15:40:22+00:00"
         },
