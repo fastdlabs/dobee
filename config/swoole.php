@@ -2,31 +2,31 @@
 
 // Swoole HTTP Server 基础配置。
 //
-// 默认只保留主应用端口；Demo 的 Stats / Swoole Listener 端口由
-// fastd/dobee-demo 安装脚本写入下面的 demo 标记区。
-$listens = [
-    [
+// 默认只保留主应用端口；Demo 端口由 fastd/dobee-demo 安装脚本写入
+// 下面的 demo 标记区。
+$servers = [
+    'http' => [
         'host' => '127.0.0.1',
         'port' => 9527,
-        'worker' => \FastD\Listener\Server\SwHttpListener::class,
+        'handler' => \FastD\Listener\Server\SwHttpListener::class,
     ],
 ];
 
-$demoListens = [];
+$demoServers = [];
 // demo:swoole:start
 // demo:swoole:end
-$listens = array_merge($listens, $demoListens);
+$servers = array_merge($servers, $demoServers);
 
 return [
-    'listen' => $listens,
+    'servers' => $servers,
 
     // Swoole 服务进程事件监听
-    'listener' => [
+    'events' => [
         \FastD\Swoole\Listener\Server\WorkerListener::class,
     ],
 
-    // 与 Swoole 官网保持一致：https://wiki.swoole.com/#/server/setting
-    'setting' => [
+    // Swoole 原生 options，与官网保持一致：https://wiki.swoole.com/#/server/setting
+    'options' => [
         'log_level' => 5,
         // SSE 需要协程 write()
         'enable_coroutine' => true,
