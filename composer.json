@@ -21,7 +21,7 @@
     "require": {
         "php": ">=8.4.1",
         "ext-json": "*",
-        "fastd/fastd": "^8.2",
+        "fastd/fastd": "^8.3",
         "fastd/cache": "^8.1",
         "fastd/medoodb": "^8.0"
     },
@@ -30,7 +30,7 @@
         "symfony/console": "^8.0",
         "swoole/ide-helper": "^6.0",
         "phpstan/phpstan": "^2.3",
-        "fastd/dobee-demo": "^1.4"
+        "fastd/dobee-demo": "^1.4.3"
     },
     "config": {
         "bin-dir": "bin"
