@@ -21,7 +21,6 @@
     "require": {
         "php": ">=8.4.1",
         "ext-json": "*",
-        "ext-pdo": "*",
         "fastd/fastd": "^8.2"
     },
     "require-dev": {
@@ -30,6 +29,9 @@
         "swoole/ide-helper": "@dev",
         "phpstan/phpstan": "^2.3",
         "fastd/dobee-demo": "^1.4"
+    },
+    "suggest": {
+        "ext-pdo": "Required when using the database demo or MedooDB integration."
     },
     "config": {
         "bin-dir": "bin"
