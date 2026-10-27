@@ -1,29 +1,21 @@
 <?php
 
-// Swoole HTTP Server 配置。
+// Swoole HTTP Server 基础配置。
+//
+// 默认只保留主应用端口；Demo 的 Stats / Swoole Listener 端口由
+// fastd/dobee-demo 安装脚本写入下面的 demo 标记区。
 $listens = [
-    // 主应用端口：交给 FastD 核心 RequestListener 分发到 Application
     [
         'host' => '127.0.0.1',
         'port' => 9527,
         'worker' => \FastD\Listener\Server\SwHttpListener::class,
     ],
-    // 内置统计端口：http://127.0.0.1:9528/
-    [
-        'host' => '127.0.0.1',
-        'port' => 9528,
-        'worker' => \FastD\Swoole\Listener\Server\StatsListener::class,
-    ],
 ];
 
-// Demo 包的独立 Swoole Listener 示例：http://127.0.0.1:9529/
-if (class_exists(\FastD\Demo\Listener\Server\DemoServerListener::class)) {
-    $listens[] = [
-        'host' => '127.0.0.1',
-        'port' => 9529,
-        'worker' => \FastD\Demo\Listener\Server\DemoServerListener::class,
-    ];
-}
+$demoListens = [];
+// demo:swoole:start
+// demo:swoole:end
+$listens = array_merge($listens, $demoListens);
 
 return [
     'listen' => $listens,
