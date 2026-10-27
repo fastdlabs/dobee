@@ -1,17 +1,10 @@
 <?php
 
 // 自定义进程配置：php bin/process
-$workers = [];
-$listeners = [];
-
-// Demo Worker / 信号监听由可选包提供并用 DemoServiceProvider 注册到容器；
-// Process 从容器解析实例；未安装时保持空配置。
-if (class_exists(\FastD\Demo\Process\DemoWorker::class)) {
-    $workers['demo'] = \FastD\Demo\Process\DemoWorker::class;
-    $listeners[] = \FastD\Demo\Listener\Process\DemoSignalListener::class;
-}
-
+//
+// Demo 包安装后，Worker / 信号监听由 DemoServiceProvider 注册到
+// ProcessRegistry，宿主不需要在这里列类名。
 return [
-    'worker' => $workers,
-    'listener' => $listeners,
+    'worker' => [],
+    'listener' => [],
 ];

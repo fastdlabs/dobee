@@ -138,5 +138,7 @@ Demo 命令：
 
 ```bash
 php bin/console demo:hello
+# Hello from fastd/dobee-demo command: Hello FastD from constructor injection
 php bin/process
+# [demo] worker started: demo (pid=...) Hello FastD from constructor injection
 ```

@@ -1,12 +1,7 @@
 <?php
 
 // 控制台命令注册：php bin/console <command>
-$commands = [];
-
-// Demo 命令由可选包提供；类名由 DemoServiceProvider 注册到容器，
-// Console 通过 Application::make() 解析（构造器注入）；未安装时自动跳过。
-if (class_exists(\FastD\Demo\Command\DemoCommand::class)) {
-    $commands[] = \FastD\Demo\Command\DemoCommand::class;
-}
-
-return $commands;
+//
+// Demo 包安装后，命令由 fastd/dobee-demo 的 DemoServiceProvider 注册到
+// CommandRegistry，宿主不需要在这里列类名。
+return [];
