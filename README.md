@@ -56,8 +56,13 @@ Hello FastD and goodbye FastD
 ```text
 dobee/
 ├── config/
+│   ├── cache.php          # 缓存池 / HTTP 缓存配置（含注释示例）
+│   ├── command.php        # 控制台命令（按需加载 demo）
+│   ├── database.php       # SQLite/MySQL 配置（含注释示例）
 │   ├── listener.php       # 事件监听
+│   ├── process.php        # 自定义进程 / 信号监听
 │   ├── service.php        # 服务提供者（按需加载 demo）
+│   ├── session.php        # Session 配置
 │   └── swoole.php         # Swoole 服务配置
 ├── routes/
 │   └── web.php            # 路由（仅欢迎接口）
@@ -84,6 +89,11 @@ https://github.com/fastdlabs/dobee-demo
 - SSE / AI Mock Stream
 - RequestId Middleware
 - 构造器注入 / Resolver
+- Cache（file adapter）
+- Database（SQLite / MedooDB）
+- Swoole Server / 自定义 Listener
+- Console Command
+- Process / Signal
 - 演示页面 `/demo/*.html`
 
 生产环境使用 `--no-dev` 安装时不会引入 Demo 路由、中间件或代码：
@@ -109,3 +119,22 @@ bin/phpstan analyse --no-progress
 ## License
 
 MIT
+
+## 配置示例
+
+`config/` 下保留了完整的配置示例与注释：
+
+- `cache.php`：文件、PHP、Redis、Memcached、HTTP 缓存中间件
+- `database.php`：SQLite（默认）、MySQL、PostgreSQL
+- `session.php`：Session handler、Cookie、TTL、Swoole Table
+- `command.php`：控制台命令注册（Demo 条件加载）
+- `process.php`：Worker 与信号监听（Demo 条件加载）
+- `swoole.php`：多端口 Listener、Stats、Swoole 设置
+- `service.php` / `listener.php`：服务与事件监听
+
+Demo 命令：
+
+```bash
+php bin/console demo:hello
+php bin/process
+```
