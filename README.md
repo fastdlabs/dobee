@@ -149,7 +149,10 @@ php bin/process
 `config/service.php` 默认保持为空。
 
 安装 `fastd/dobee-demo` 后，Composer 的 `post-install-cmd` / `post-update-cmd`
-会执行 `scripts/install-demo.php`，调用 Demo 包的安装脚本，自动把
-`FastD\Demo\DemoServiceProvider` 写入 `config/service.php`。
+会直接调用 Demo 包的 `scripts/install.php`：
 
-未安装 Demo（例如 `composer install --no-dev`）时，残留 Provider 会被自动移除。
+- 读取并校验原配置
+- 在 `return` 数组内定点注入 Demo spread 表达式
+- 只有执行脚本时才写入 `demo: fastd/dobee-demo` 注释
+- 用户已有配置与注释不变
+- 未安装 Demo 时注入内容通过 `class_exists()` 自动失效
