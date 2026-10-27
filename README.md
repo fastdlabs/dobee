@@ -99,6 +99,54 @@ https://github.com/fastdlabs/dobee-demo
 - Process / Signal
 - 演示页面 `/demo/*.html`
 
+### 安装与启用
+
+```bash
+composer require --dev fastd/dobee-demo
+```
+
+安装脚本会在宿主的 `config/service.php`、`config/swoole.php` 中注入 Demo Provider 和监听端口；dobee 骨架本身保持最简，不需要复制 Demo 代码。
+
+### 启动并访问 Demo
+
+Demo HTML 页面建议通过 CGI 打开：
+
+```bash
+php -S 127.0.0.1:8099 -t web
+```
+
+```text
+http://127.0.0.1:8099/demo/index.html
+```
+
+Swoole 模式：
+
+```bash
+php bin/server start
+```
+
+Demo 首页：
+
+- 左侧：Demo 列表
+- 中间：点击 Demo 后直接嵌入展示，不跳转
+- 右侧：CGI / Swoole 切换、启动命令、当前 API 域名
+
+HTML 页面固定从当前 CGI URL 加载；API 请求按右侧选择切换：
+
+| 模式 | API 域名 |
+|---|---|
+| CGI | 当前 URL 域名 |
+| Swoole | `config/swoole.php` 的 `servers.http.host` / `port` |
+
+Demo 页面右下角会显示页面域名、实际 API 域名和最近一次请求，便于区分两种运行环境。
+
+完整 Demo 路由与说明见：
+
+- [fastd/dobee-demo](https://github.com/fastdlabs/dobee-demo)
+- [Demo Scenarios](https://github.com/fastdlabs/dobee-demo/blob/master/docs/scenarios.md)
+
+### 关闭 Demo
+
 生产环境使用 `--no-dev` 安装时不会引入 Demo 路由、中间件或代码：
 
 ```bash
