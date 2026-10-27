@@ -1,5 +1,6 @@
 {
     "name": "fastd/dobee",
+    "description": "Minimal FastD application skeleton with Swoole and FastCGI runtimes.",
     "type": "project",
     "license": "MIT",
     "prefer-stable": true,
