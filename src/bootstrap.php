@@ -14,7 +14,7 @@ return [
         'level' => \Monolog\Level::Debug,
     ],
 
-    'route'    => __DIR__ . '/../routes/api.php',
+    'route'    => __DIR__ . '/../routes/web.php',
 
     'service'  => __DIR__ . '/../config/service.php',
 

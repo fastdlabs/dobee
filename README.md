@@ -69,7 +69,7 @@ dobee/
 │   ├── session.php
 │   └── swoole.php
 ├── routes/
-│   └── api.php              # API 路由
+│   └── web.php              # Web 路由
 ├── src/                     # 应用代码（根命名空间映射到 src/）
 │   ├── bootstrap.php        # 引导文件（FastD bin 固定读取）
 │   ├── Http/
@@ -133,7 +133,7 @@ return [
 
 ### 4. 定义路由
 
-编辑 `routes/api.php`:
+编辑 `routes/web.php`:
 
 ```php
 return [
@@ -180,7 +180,7 @@ class UserController implements MiddlewareInterface
 路由第 4 个参数可传入中间件类列表，按路由独立生效：
 
 ```php
-// routes/api.php
+// routes/web.php
 ['GET', '/middleware-demo', \Http\Controller\MiddlewareDemoController::class, [
     \Http\Middleware\RequestIdMiddleware::class,
 ]],
