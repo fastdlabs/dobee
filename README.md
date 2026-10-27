@@ -142,3 +142,14 @@ php bin/console demo:hello
 php bin/process
 # [demo] worker started: demo (pid=...) Hello FastD from constructor injection
 ```
+
+
+## Demo 服务自动注册
+
+`config/service.php` 默认保持为空。
+
+安装 `fastd/dobee-demo` 后，Composer 的 `post-install-cmd` / `post-update-cmd`
+会执行 `scripts/install-demo.php`，调用 Demo 包的安装脚本，自动把
+`FastD\Demo\DemoServiceProvider` 写入 `config/service.php`。
+
+未安装 Demo（例如 `composer install --no-dev`）时，残留 Provider 会被自动移除。

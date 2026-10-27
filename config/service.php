@@ -1,10 +1,7 @@
 <?php
 
-$providers = [];
-
-// Demo 包是可选依赖：生产环境 --no-dev 安装时自动跳过。
-if (class_exists(\FastD\Demo\DemoServiceProvider::class)) {
-    $providers[] = \FastD\Demo\DemoServiceProvider::class;
-}
-
-return $providers;
+// 服务提供者配置。
+//
+// 默认保持为空；安装 fastd/dobee-demo 后，Composer 安装脚本会自动把
+// DemoServiceProvider 写入这里。
+return [];
