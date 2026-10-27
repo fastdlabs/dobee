@@ -40,10 +40,10 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "@php scripts/install-demo.php"
+            "@php -r \"is_file('vendor/fastd/dobee-demo/scripts/install.php') && require 'vendor/fastd/dobee-demo/scripts/install.php';\""
         ],
         "post-update-cmd": [
-            "@php scripts/install-demo.php"
+            "@php -r \"is_file('vendor/fastd/dobee-demo/scripts/install.php') && require 'vendor/fastd/dobee-demo/scripts/install.php';\""
         ]
     }
 }
