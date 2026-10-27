@@ -149,10 +149,10 @@ php bin/process
 `config/service.php` 默认保持为空。
 
 安装 `fastd/dobee-demo` 后，Composer 的 `post-install-cmd` / `post-update-cmd`
-会直接调用 Demo 包的 `scripts/install.php`，只在原配置文件的 marker 区块内追加：
+会直接调用 Demo 包的 `scripts/install.php`：
 
-- `config/service.php` 的 `demo:service` 区块
-- `config/swoole.php` 的 `demo:swoole` 区块
-
-用户自定义的服务、端口、注释都在 marker 外，安装脚本不会覆盖。
-未安装 Demo 时 marker 内的配置通过 `class_exists()` 自动失效。
+- 读取并校验原配置
+- 在 `return` 数组内定点注入 Demo spread 表达式
+- 只有执行脚本时才写入 `demo: fastd/dobee-demo` 注释
+- 用户已有配置与注释不变
+- 未安装 Demo 时注入内容通过 `class_exists()` 自动失效
