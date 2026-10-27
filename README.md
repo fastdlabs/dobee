@@ -1,7 +1,7 @@
 # DoBee Framework
 
 [![CI](https://github.com/fastdlabs/dobee/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/fastdlabs/dobee/actions/workflows/ci.yml)
-[![PHP Version](https://img.shields.io/badge/php-%3E%3D8.2-8892BF.svg)](https://secure.php.net/)
+[![PHP Version](https://img.shields.io/badge/php-%3E%3D8.4.1-8892BF.svg)](https://secure.php.net/)
 [![Swoole Version](https://img.shields.io/badge/swoole-%3E%3E4.5-8892BF.svg)](http://www.swoole.com/)
 [![Latest Stable Version](https://poser.pugx.org/fastd/dobee/v/stable)](https://packagist.org/packages/fastd/dobee)
 [![License](https://poser.pugx.org/fastd/dobee/license)](https://packagist.org/packages/fastd/dobee)
@@ -22,7 +22,7 @@ DoBee 是基于 FastD 组件生态构建的高性能 PHP API 框架骨架，完�
 
 ## 📋 环境要求
 
-- **PHP**: >= 8.2
+- **PHP**: >= 8.4.1
 - **Swoole**: >= 4.5 (可选，用于协程模式)
 - **扩展**: 
   - ext-swoole (可选)
@@ -457,7 +457,7 @@ DoBee 基于 FastD 8.0 组件生态：
 
 具体组件版本由 `fastd/fastd` 统一约束，dobee 不再单独维护组件版本矩阵。
 
-所有组件均遵循 PSR 标准，完全兼容 PHP 8.4+。
+所有组件均遵循 PSR 标准，完全兼容 PHP 8.4.1+。
 
 ## 📖 文档
 
