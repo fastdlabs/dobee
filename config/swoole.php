@@ -2,8 +2,7 @@
 
 // Swoole HTTP Server 基础配置。
 //
-// Demo 端口由 Demo 安装脚本生成的 config/swoole-demo.php 补充，
-// 不会改写用户自定义的 swoole.php。
+// 可在 $servers 中追加自定义监听端口；demo 只维护 marker 区块。
 $servers = [
     'http' => [
         'host' => '127.0.0.1',
@@ -12,10 +11,8 @@ $servers = [
     ],
 ];
 
-$demoConfig = __DIR__ . '/swoole-demo.php';
-if (is_file($demoConfig)) {
-    $servers = array_merge($servers, require $demoConfig);
-}
+// demo:swoole:start
+// demo:swoole:end
 
 return [
     'servers' => $servers,

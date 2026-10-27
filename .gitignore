@@ -39,6 +39,3 @@ runtime/
 # --- agent workspace ---
 .qoder/
 
-# --- demo generated config ---
-/config/service-demo.php
-/config/swoole-demo.php

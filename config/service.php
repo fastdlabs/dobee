@@ -2,14 +2,14 @@
 
 // 服务提供者配置。
 //
-// 默认保持为空；Demo 安装脚本只生成 config/service-demo.php，
-// 不会改写用户自定义的 service.php。
-$services = [];
+// 在 $services 中追加自定义 ServiceProvider；demo 只维护 marker 区块。
+$services = [
+    // 自定义 ServiceProvider 示例：
+    // \App\ServiceProvider\DemoServiceProvider::class,
+];
 
-$demoConfig = __DIR__ . '/service-demo.php';
-if (is_file($demoConfig)) {
-    $services = array_merge($services, require $demoConfig);
-}
+// demo:service:start
+// demo:service:end
 
 return array_values(array_filter(
     $services,
