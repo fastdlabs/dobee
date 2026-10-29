@@ -2402,16 +2402,16 @@
     "packages-dev": [
         {
             "name": "fastd/dobee-demo",
-            "version": "v1.4.3",
+            "version": "v1.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fastdlabs/dobee-demo.git",
-                "reference": "3761f1a51f0d3875ed3d6d0a123c2ef14b7c5719"
+                "reference": "ddde9c9db3be32d62ce9554b51ae0726bf1b7db7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fastdlabs/dobee-demo/zipball/3761f1a51f0d3875ed3d6d0a123c2ef14b7c5719",
-                "reference": "3761f1a51f0d3875ed3d6d0a123c2ef14b7c5719",
+                "url": "https://api.github.com/repos/fastdlabs/dobee-demo/zipball/ddde9c9db3be32d62ce9554b51ae0726bf1b7db7",
+                "reference": "ddde9c9db3be32d62ce9554b51ae0726bf1b7db7",
                 "shasum": ""
             },
             "require": {
@@ -2457,9 +2457,9 @@
             ],
             "support": {
                 "issues": "https://github.com/fastdlabs/dobee-demo/issues",
-                "source": "https://github.com/fastdlabs/dobee-demo/tree/v1.4.3"
+                "source": "https://github.com/fastdlabs/dobee-demo/tree/v1.4.4"
             },
-            "time": "2026-10-27T15:40:22+00:00"
+            "time": "2026-10-29T06:51:04+00:00"
         },
         {
             "name": "myclabs/deep-copy",
