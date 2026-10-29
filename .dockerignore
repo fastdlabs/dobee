@@ -1,0 +1,9 @@
+.git
+.github
+.idea
+.env
+.env.*
+runtime
+tests
+vendor
+.phpunit.result.cache
