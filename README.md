@@ -165,6 +165,50 @@ composer install --no-dev
 composer remove --dev fastd/dobee-demo
 ```
 
+## Docker 部署
+
+仓库提供生产用 `Dockerfile`，镜像内包含 PHP 8.4、Swoole 6、PDO 和生产依赖。
+
+### 构建
+
+```bash
+docker build -t fastd-dobee:1.4.3 .
+```
+
+### 运行
+
+```bash
+docker run -d \
+  --name fastd-dobee \
+  -p 9527:9527 \
+  -v "$PWD/runtime:/app/runtime" \
+  fastd-dobee:1.4.3
+```
+
+验证：
+
+```bash
+curl http://127.0.0.1:9527/
+```
+
+### 配置与持久化
+
+- 生产配置通过挂载 `config/` 或环境变量注入，不要把密钥打进镜像；
+- `runtime/` 必须挂载，否则容器重建会丢失日志、缓存和 pid；
+- 容器内默认将 Swoole 监听地址改为 `0.0.0.0`；如果自行挂载 `config/swoole.php`，也要保持 `0.0.0.0`；
+- `runtime/` 对容器内 `www-data` 用户可写。
+
+### 版本与回滚
+
+镜像 tag 与发布版本对应：
+
+```bash
+docker build -t registry.example.com/fastd-dobee:1.4.3 .
+docker push registry.example.com/fastd-dobee:1.4.3
+```
+
+回滚时运行上一版本镜像即可。
+
 ## 开发
 
 ```bash
