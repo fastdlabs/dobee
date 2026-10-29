@@ -54,6 +54,12 @@ Hello FastD and goodbye FastD [fastcgi]
 
 方括号中为当前执行环境（如 `fastcgi`、`swoole`、`testcase`），用于区分运行时。
 
+## 文档
+
+- [FastD 8.3 使用手册](https://fastdlabs.github.io/docs/#/zh-cn/8.3/readme)
+- [Demo 使用说明](https://fastdlabs.github.io/docs/#/zh-cn/8.3/guide/demo)
+- [文档站点](https://fastdlabs.github.io/docs/)
+
 ## 项目结构
 
 ```text
